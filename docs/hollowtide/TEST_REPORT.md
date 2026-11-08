@@ -55,3 +55,9 @@ Antes deste checkpoint: versões de ARM GCC, assembler/linker/objcopy, Python, R
 - Nenhuma aprovação artística ou definição de IDs de campanha.
 
 `rom.nds` e `test.nds` estão ausentes. O build inicial, a prova mínima, os testes reais de Primal Kyogre e a integração visual permanecem bloqueados. Nenhuma ferramenta foi instalada ou reinstalada.
+
+## Tentativa posterior de receber o anexo `rom.nds`
+
+Em 2026-11-08, a configuração do ambiente continuou indicando execução conectada. A transferência do anexo foi tentada e falhou com `file exceeds the executor transfer limit of 32 MiB`. A inspeção dos diretórios de arquivos compartilhados e a busca por ROMs no workspace não encontraram cópia local. O checkout estava limpo antes da atualização da documentação.
+
+Nenhum teste de conteúdo da ROM, compilação, extração ou emulação foi executado nessa tentativa. A suíte offline anterior não foi repetida, pois somente os registros do bloqueio foram atualizados. Não há novo resultado de build a relatar.

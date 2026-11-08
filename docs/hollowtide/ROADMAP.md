@@ -10,7 +10,7 @@
 
 ## Próximo checkpoint
 
-Com `rom.nds` legítima fornecida: conferir game code/revisão/hash, executar o build serial do baseline, registrar log/exit code e identificar exatamente o artefato recém-gerado. Em caso de falha, investigar o primeiro erro antes de reinstalar componentes.
+A `rom.nds` foi anexada, mas o transporte foi recusado pelo limite de 32 MiB. O próximo passo é receber o mesmo arquivo compactado ou dividido e disponibilizá-lo no checkout. Depois: conferir game code/revisão/hash, executar o build serial do baseline, registrar log/exit code e identificar exatamente o artefato recém-gerado. Em caso de falha, investigar o primeiro erro antes de reinstalar componentes.
 
 Após o baseline compilar: testar boot no emulador; aplicar a pequena prova de modificação de treinador; recompilar e verificar o delta do NARC e a batalha. Não avançar para a campanha inteira antes dessa evidência.
 

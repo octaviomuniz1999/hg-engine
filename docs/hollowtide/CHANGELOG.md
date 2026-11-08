@@ -1,5 +1,11 @@
 # Histórico Hollowtide
 
+## 2026-11-08 — recebimento bloqueado por tamanho do anexo
+
+- `rom.nds` fornecida pelo proprietário no chat; transferência recusada pela ferramenta por exceder 32 MiB.
+- Nenhuma cópia local alternativa encontrada; cabeçalho e hash ainda não verificados.
+- Atualizados somente os registros de bloqueio, roadmap, relatório e histórico. Nenhuma instalação, compilação, extração ou emulação tentada.
+
 ## 2026-11-08 — preparação independente de ROM
 
 - Branch local `codex/hollowtide-foundation`, a partir de `dbb321327c59b821507f9fc4cb6c41d45a9d2698`.
