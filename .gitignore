@@ -57,6 +57,9 @@ sdat/*
 changelog
 
 /data/generated/
+# Private text generated from the owner's ROM for Hollowtide technical proofs.
+/data/text/custom/219.txt
+/data/text/custom/442.txt
 /armips/include/generated/
 /include/constants/generated/
 test_logs.txt

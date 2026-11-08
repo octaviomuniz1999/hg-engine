@@ -1,5 +1,14 @@
 # Histórico Hollowtide
 
+## 2026-11-08 — primeiro build e prova observada no emulador
+
+- Oito volumes RAR extraídos pela libarchive existente; ROM IPKE revisão 0, 128 MiB, CRCs de cabeçalho/logo conferidos.
+- Três `make` seriais com exit 0: baseline, prova de menu e prova final de tutorial; saídas de 256 MiB.
+- Prova final com `Hollowtide build test.` observada no DeSmuME. Apenas a entrada 7 do arquivo de mensagens 219 difere do baseline; ARM9/ARM7, tabelas de overlays e demais arquivos do filesystem permaneceram idênticos.
+- Acrescentados preparador e verificador reproduzíveis em `tools/hollowtide/`; `.gitignore` protege os textos gerados com dados da base. ROMs, dumps e screenshots permanecem privados, fora dos commits.
+- Arquivo de teste normalizado automaticamente pelo build restaurado byte a byte. Sem alterações em C/assembly, Makefiles ou configurações; nenhuma instalação e nenhum push.
+- 14 testes offline passaram novamente. Save/load persistente, batalhas e mapas autorais ainda não testados.
+
 ## 2026-11-08 — recebimento bloqueado por tamanho do anexo
 
 - `rom.nds` fornecida pelo proprietário no chat; transferência recusada pela ferramenta por exceder 32 MiB.

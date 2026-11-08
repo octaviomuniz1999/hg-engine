@@ -1,6 +1,6 @@
 # Mecânicas: evidência de código, não de gameplay
 
-Base auditada: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Nenhuma mecânica foi reimplementada ou reconfigurada. As entradas abaixo demonstram implementação existente; todas aguardam compilação e teste em uma ROM compatível.
+Base auditada: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Nenhuma mecânica foi reimplementada ou reconfigurada. O código foi compilado nos builds reais descritos em ROM_CHECKPOINT.md. As entradas abaixo demonstram implementação existente; o funcionamento de cada mecânica em batalha ainda aguarda teste.
 
 | Sistema | Evidência na árvore atual | Gate de validação |
 | --- | --- | --- |

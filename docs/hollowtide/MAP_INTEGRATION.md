@@ -2,7 +2,7 @@
 
 ## Situação
 
-Não há mapas autorais exportados nos diretórios compartilhados consultados, nem ROM-base. Não foi feita importação visual, conversão de geometria, alteração de colisões ou configuração de warps reais.
+Não há mapas autorais exportados nos diretórios compartilhados consultados. A ROM-base foi recebida, o baseline compilou e uma prova de texto foi observada no emulador, conforme [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md). Não foi feita importação visual de mapas, conversão de geometria, alteração de colisões ou configuração de warps reais.
 
 O [release oficial PDSMS 2.2](https://github.com/Trifindo/Pokemon-DS-Map-Studio/releases/tag/2.2) documenta exportação BIN com seções de modelo, permissões, edifícios, terreno, som e câmera para importação no DSPRE. O [README oficial do DSPRE](https://github.com/DS-Pokemon-Rom-Editor/DSPRE/blob/main/README.md) documenta importação/exportação de BIN e NSBMD, edição de colisões, headers, matrizes e eventos. Ele declara suporte **parcial** a ROMs hg-engine. Fontes consultadas em 2026-11-08; nenhum desses editores foi instalado ou executado nesta tarefa.
 

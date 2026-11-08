@@ -2,6 +2,8 @@
 
 ## Conclusão
 
+**Atualização após recebimento da ROM:** os três builds reais descritos em [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) passaram com os comandos de ligação originais e sem ajuste da Newlib. Não houve erro de símbolo ou de `libc.a` nessas execuções. A análise abaixo registra o diagnóstico anterior ao build.
+
 Não foi identificado um erro de configuração do **linker usado pelo hg-engine** relacionado a `libc.a`. Existe uma limitação real na instalação relocada de Newlib para programas ARM genéricos que esperem seus caminhos padrão. Ela não demonstra uma falha deste build e não exige reinstalação para a configuração auditada. Nenhuma compilação ou ligação foi realizada para chegar a essa conclusão.
 
 ## Evidências verificadas

@@ -1,6 +1,6 @@
 # Pokémon Hollowtide — base técnica Nintendo DS
 
-Checkpoint de 2026-11-08. A engine foi restaurada e auditada; o jogo ainda **não foi compilado nem validado em execução** nesta tarefa.
+Checkpoint de 2026-11-08. **Baseline compilado; alteração mínima recompilada e observada no DeSmuME.** Foram três builds com exit 0. O marcador técnico `Hollowtide build test.` apareceu no tutorial. Save/load, batalhas e mapas autorais continuam sem validação. Evidência em [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md).
 
 ## Base e autoria
 
@@ -9,7 +9,7 @@ Checkpoint de 2026-11-08. A engine foi restaurada e auditada; o jogo ainda **nã
 - Commit base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`.
 - Branch local: `codex/hollowtide-foundation`. Sem push ou publicação.
 - Submódulo nitrogfx: `a8fd94a3e582ded71eda5b9f5f0c69258544bb22`.
-- Código, dados de jogo, configurações, Makefiles, lockfiles e créditos originais preservados. As adições Hollowtide ficam em `docs/hollowtide/`, `tools/hollowtide/` e `tests/hollowtide/`.
+- Código C/assembly, dados de jogo rastreados, configurações, Makefiles, lockfiles e créditos originais preservados. As adições Hollowtide ficam em `docs/hollowtide/`, `tools/hollowtide/` e `tests/hollowtide/`. `.gitignore` também protege os textos privados gerados para a prova; os arquivos não são narrativa final.
 
 ## Direção criativa preservada
 
@@ -23,7 +23,8 @@ Essas decisões são requisitos registrados, **não conteúdo implementado**. Ne
 
 | Arquivo | Conteúdo |
 | --- | --- |
-| [BUILD.md](BUILD.md) | Ativação, dependências, comandos e gates para o build futuro |
+| [BUILD.md](BUILD.md) | Ativação, dependências, comandos de build e gates de validação |
+| [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) | ROM recebida, três builds e modificação observada no emulador |
 | [LINKER_AUDIT.md](LINKER_AUDIT.md) | Diagnóstico da Newlib e do linker efetivamente usado |
 | [MECHANICS_AUDIT.md](MECHANICS_AUDIT.md) | Evidências estáticas e validações pendentes |
 | [MAP_INTEGRATION.md](MAP_INTEGRATION.md) | PDSMS, DSPRE, hg-engine, recebimento e validação de mapas |

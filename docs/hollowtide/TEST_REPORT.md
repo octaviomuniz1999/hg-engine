@@ -2,6 +2,29 @@
 
 Base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Branch: `codex/hollowtide-foundation`.
 
+## Estado atual: build e prova visual realizados
+
+O bloqueio de transferência foi resolvido pelo envio de oito volumes RAR. Foram executados três `make` seriais, todos com exit 0, sem overrides; cada saída tem 256 MiB. O baseline iniciou até título/tutorial no DeSmuME. A prova final exibiu `Hollowtide build test.` no tutorial, por captura inspecionada após 1.924 frames. Detalhes, comandos e caminhos em [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md).
+
+Verificações adicionais efetivamente executadas:
+
+- CRCs de cabeçalho e logo e leitura estrutural da base IPKE revisão 0: passaram.
+- Comparação de ROMs por `verify_text_smoke_test.py`, para menu e tutorial: passou; somente `a/0/2/7`, o membro pretendido e uma entrada decodificada mudaram. ARM9, ARM7, tabelas de overlays e FNT serializada permaneceram iguais.
+- Recusa de sobrescrever texto privado existente: exit 2 esperado e conteúdo inalterado.
+- Recusa de aprovar a ROM do tutorial como se fosse a prova de menu: exit 1 esperado.
+- Nova execução da suíte offline: 14 testes, zero falhas/erros, 0,085 s.
+- Sintaxe dos dois novos scripts Python de prova: passou.
+- Logs dos três builds: nenhuma linha `warning:` ou `error:`; nenhuma instalação realizada.
+- Comparação de hashes dos arquivos originais: somente `.gitignore` mudou intencionalmente. O teste de batalha normalizado pelo gerador foi restaurado exatamente.
+
+A primeira checagem ad hoc da FNT usou igualdade direta entre objetos `Folder` de ndspy e falhou. O instrumento de verificação foi corrigido para comparar sua serialização; a checagem repetida e o verificador versionado passaram. Isso não foi uma falha de build ou de conteúdo da ROM.
+
+As capturas pretas iniciais após o título eram transições: avançar frames levou ao tutorial. A prova `NEW GAME` → `TEST RUN` não foi observada visualmente porque a primeira inicialização sem save pula esse menu. A prova final usa o tutorial visível; o delta de menu foi removido antes dela.
+
+O emulador informou operação de save em RAM. Não foram exercitados save/load persistente, exploração, treinadores, batalhas, Primal Kyogre, hardware ou mapas personalizados. Os registros abaixo preservam as etapas históricas independentes de ROM e a tentativa inicial de transferência, não descrevem o estado atual de ausência de ROM.
+
+## Histórico: fase anterior sem ROM acessível
+
 ## Testes automatizados executados
 
 ```bash
