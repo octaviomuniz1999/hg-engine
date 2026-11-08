@@ -1,0 +1,46 @@
+# Pokémon Hollowtide — base técnica Nintendo DS
+
+Checkpoint de 2026-11-08. A engine foi restaurada e auditada; o jogo ainda **não foi compilado nem validado em execução** nesta tarefa.
+
+## Base e autoria
+
+- Upstream: [BluRosie/hg-engine](https://github.com/BluRosie/hg-engine).
+- Checkout existente: `/workspace/hg-engine`; origin aponta para o fork `octaviomuniz1999/hg-engine`.
+- Commit base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`.
+- Branch local: `codex/hollowtide-foundation`. Sem push ou publicação.
+- Submódulo nitrogfx: `a8fd94a3e582ded71eda5b9f5f0c69258544bb22`.
+- Código, dados de jogo, configurações, Makefiles, lockfiles e créditos originais preservados. As adições Hollowtide ficam em `docs/hollowtide/`, `tools/hollowtide/` e `tests/hollowtide/`.
+
+## Direção criativa preservada
+
+Hollowtide, anteriormente Pokémon PALM, usa ambientes 3D e personagens em sprites 2D de quarta geração. Vínculos, percepção emocional dos lugares e subtexto orientam a narrativa; a direção criativa e a aprovação artística pertencem ao usuário.
+
+A campanha começa na Vila Inicial, passa pela Rota 01 e chega à Vila da Colheita, ligada a agricultura e irrigação. Professor Alex é o professor regional; Snivy, Fennekin e Mudkip são os iniciais. Team Palm é a organização antagonista. Nevard (Estevão), líder de Grama, tem Shroomish nível 12 e Treecko nível 14 planejados; seu ginásio usa comportas e irrigação. Primal Kyogre faz parte da equipe de um personagem relevante.
+
+Essas decisões são requisitos registrados, **não conteúdo implementado**. Nenhuma geometria, narrativa, equipe ou flag definitiva foi inventada ou alterada.
+
+## Documentação
+
+| Arquivo | Conteúdo |
+| --- | --- |
+| [BUILD.md](BUILD.md) | Ativação, dependências, comandos e gates para o build futuro |
+| [LINKER_AUDIT.md](LINKER_AUDIT.md) | Diagnóstico da Newlib e do linker efetivamente usado |
+| [MECHANICS_AUDIT.md](MECHANICS_AUDIT.md) | Evidências estáticas e validações pendentes |
+| [MAP_INTEGRATION.md](MAP_INTEGRATION.md) | PDSMS, DSPRE, hg-engine, recebimento e validação de mapas |
+| [TEST_REPORT.md](TEST_REPORT.md) | Verificações realmente executadas e seus limites |
+| [BLOCKERS.md](BLOCKERS.md) | Dependências que impedem os próximos gates |
+| [ROADMAP.md](ROADMAP.md) | Etapas sequenciais e próximo checkpoint |
+| [CHANGELOG.md](CHANGELOG.md) | Escopo deste checkpoint |
+| [templates/MAP_RECORD.md](templates/MAP_RECORD.md) | Ficha de integração sem IDs arbitrários |
+
+## Reexecutar os testes independentes
+
+Na raiz do checkout, em um shell com o ambiente restaurado:
+
+```bash
+source /workspace/.hg-env/activate
+mkdir -p /workspace/work
+TMPDIR=/workspace/work PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/hollowtide -v
+```
+
+Os fixtures são sintéticos e temporários. Nenhum processo de compilação, extração real, empacotamento real ou emulação é executado por essa suíte.
