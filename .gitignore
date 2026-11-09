@@ -15,6 +15,11 @@ narc/*
 *.pyc
 .venv
 *.sav
+# Private DeSmuME battery saves, savestates and commercial save containers.
+*.dsv
+*.dst
+*.ds[0-9]
+*.duc
 
 /tools/msgenc*
 /tools/ndstool*

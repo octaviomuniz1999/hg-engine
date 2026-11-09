@@ -2,13 +2,13 @@
 
 ## Situação
 
-Não há mapas autorais exportados nos diretórios compartilhados consultados. A ROM-base foi recebida, o baseline compilou e uma prova de texto foi observada no emulador, conforme [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md). Não foi feita importação visual de mapas, conversão de geometria, alteração de colisões ou configuração de warps reais.
+Não há mapas autorais exportados nos diretórios compartilhados consultados. No CP03, um mapa **nativo de calibração**, com colisão/NPC/warps experimentais, foi reimportado em cópia privada da ROM e exercitado no DeSmuME. Modelo, texturas e BDHC originais foram preservados. Isso não comprova importação visual autoral nem um export produzido pelo PDSMS. Procedimento reproduzível em [MAP_LAB.md](MAP_LAB.md) e resultados em [CHECKPOINT03.md](CHECKPOINT03.md).
 
-No CP02, as transições **originais** quarto → térreo → exterior → laboratório, o save/load e cenários de batalha foram exercitados no DeSmuME. Isso valida o recorte da base usado no ensaio, não a importação PDSMS/DSPRE. Nenhum mapa existente foi substituído. Mapas 64/63/60/61 observados são IDs da base original e não reservas para Hollowtide.
+No CP02, as transições **originais** quarto → térreo → exterior → laboratório, o save/load e cenários de batalha foram exercitados no DeSmuME. No CP03, somente a cópia experimental passou a apontar o laboratório para outro membro de mapa e a porta para a casa; `rom.nds` e `test.nds` permaneceram idênticos. Mapas 64/63/60/61 são IDs da base original, não reservas para Hollowtide.
 
 O [release oficial PDSMS 2.2](https://github.com/Trifindo/Pokemon-DS-Map-Studio/releases/tag/2.2) documenta exportação BIN com seções de modelo, permissões, edifícios, terreno, som e câmera para importação no DSPRE. O [README oficial do DSPRE](https://github.com/DS-Pokemon-Rom-Editor/DSPRE/blob/main/README.md) documenta importação/exportação de BIN e NSBMD, edição de colisões, headers, matrizes e eventos. Ele declara suporte **parcial** a ROMs hg-engine. Fontes consultadas em 2026-11-08; nenhum desses editores foi instalado ou executado nesta tarefa.
 
-Portanto, a rota candidata é **PDSMS → DSPRE → ROM de trabalho compatível → hg-engine**, a validar com as versões exatas dos editores e um mapa real. Não existe importador PDSMS direto no hg-engine demonstrado nesta entrega.
+Há duas rotas a distinguir: **PDSMS → DSPRE → base privada preparada → build limpo hg-engine** permanece candidata, sem GUI/build com mapa autoral demonstrados. O CP03 acrescenta um importador externo limitado **BIN HGSS → ROM já compilada**, sem gancho no Makefile: ele preserva as seções e foi testado com um mapa nativo, não com um export PDSMS. Reaplicá-lo após cada build evita introduzir uma ROM já patchada como nova base. Instruções exatas de entrega em [MAP_EXPORT.md](MAP_EXPORT.md).
 
 ## Recebimento sem alterar a arte
 
@@ -64,7 +64,7 @@ O exemplo mínimo reproduzível **sem mapa real** é a suíte `tests/hollowtide/
 | Recurso | Participação confirmada pelo código atual |
 | --- | --- |
 | Headers e matrizes | O dumper lê headers originais de ARM9, ou `a/0/5/0` se detectar o patch dinâmico; também consulta `fielddata/maptable/mapname.bin`. Não aplicar offsets vanilla a um hack sem identificar o modo |
-| Modelos, terreno, permissões, texturas e matriz | Não há regra demonstrada para importar o BIN PDSMS. Usar os editores e registrar os NARCs/membros efetivos descobertos na ROM, sem copiar o BIN como se fosse um NARC inteiro |
+| Modelos, terreno, permissões, texturas e matriz | HGSS: land-data `a/0/6/5`, matrizes `a/0/4/1`, area-data `a/0/4/2`, texturas `a/0/4/4`. `map_lab.py` importa um BIN como **membro**, numa matriz exclusiva 1×1; texturas/edifícios externos são reutilizados, não convertidos |
 | Scripts de campo | `data/scr_seq/*.s` → membros de `a/0/1/2`; fontes próprias 3 e 953 sempre incluídas |
 | Eventos e warps | `data/eventdata/zone_event/*.json` → `a/0/3/2`, sob `BUILD_DUMPED_EVENTDATA`; template em `data/eventdata/zone_event.json.txt` |
 | Diálogos | `data/text/*.txt`, `data/text/custom/*.txt` e textos gerados → `a/0/2/7`; custom é sempre compilado |
@@ -88,4 +88,4 @@ Antes de começar, conservar a ROM normal/backup e o save validado do CP02; rece
 8. Invalidar os caches de extração/build ao mudar a base ou a política de fontes. Compilar pelo fluxo oficial, extrair o resultado em área privada separada e comparar hashes dos recursos esperados e dos recursos que deveriam permanecer idênticos.
 9. No emulador, validar boot, caminho até o mapa, gráficos, colisão, NPCs, diálogos, entrada/saída, warps, save/load e estados persistentes. Para o ginásio, testar cada estado de irrigação e caminhos de saída para evitar softlock. Só então registrar integração visual aprovada; a aprovação artística continua com o diretor.
 
-O primeiro experimento real deve usar um único export fornecido ou um mapa técnico explicitamente separado da campanha. Porymap/Emerald não fornece binários diretamente compatíveis com esse pipeline DS; tratar eventual migração como conversão de conteúdo e recursos, não cópia de arquivos.
+O CP03 realizou a calibração técnica separada da campanha. O próximo gate exige um único export autoral e recursos complementares. Porymap/Emerald não fornece binários diretamente compatíveis com esse pipeline DS; tratar eventual migração como conversão de conteúdo e recursos, não cópia de arquivos.

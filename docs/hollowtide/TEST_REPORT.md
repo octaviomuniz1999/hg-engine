@@ -1,6 +1,6 @@
 # Relatório de verificações — 2026-11-08
 
-Este arquivo preserva o histórico do **Checkpoint 01**. O relatório de testes do Checkpoint 02, incluindo save/load e batalhas, está em [CHECKPOINT02.md](CHECKPOINT02.md).
+Este arquivo preserva o histórico do **Checkpoint 01**. O relatório de save/load e batalhas está em [CHECKPOINT02.md](CHECKPOINT02.md); a calibração de mapas e seus limites estão em [CHECKPOINT03.md](CHECKPOINT03.md).
 
 Base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Branch: `codex/hollowtide-foundation`.
 
@@ -86,3 +86,7 @@ Antes deste checkpoint: versões de ARM GCC, assembler/linker/objcopy, Python, R
 Em 2026-11-08, a configuração do ambiente continuou indicando execução conectada. A transferência do anexo foi tentada e falhou com `file exceeds the executor transfer limit of 32 MiB`. A inspeção dos diretórios de arquivos compartilhados e a busca por ROMs no workspace não encontraram cópia local. O checkout estava limpo antes da atualização da documentação.
 
 Nenhum teste de conteúdo da ROM, compilação, extração ou emulação foi executado nessa tentativa. A suíte offline anterior não foi repetida, pois somente os registros do bloqueio foram atualizados. Não há novo resultado de build a relatar.
+
+## Atualização CP03
+
+24 testes sintéticos passaram (14 anteriores + 10 de formatos do laboratório). Quatro recusas do importador com a ROM real passaram sem escrever NDS. A calibração nativa de mapa, a colisão, o assistente clonado com diálogo e a transição de ida/volta foram executados no DeSmuME; controle com ROM normal confirmou o tile originalmente transitável. Sem build novo ou emulação de mapa autoral. Comandos, artefatos, hashes, capturas e limites em [CHECKPOINT03.md](CHECKPOINT03.md).

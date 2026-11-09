@@ -1,5 +1,13 @@
 # Histórico Hollowtide
 
+## 2026-11-09 UTC — Checkpoint 03
+
+- Integridade Git de CP01/02 conferida; auditoria de todas as versões adicionadas/modificadas, somente texto autoral nos namespaces previstos. Branch de desenvolvimento acumulada e patches preparados para revisão, sem push/PR.
+- Importador experimental externo com parser HGSS, hashes, isolamento de recursos e verificação do delta serializado; preparador reproduzível sem assets incorporados ao Git.
+- Calibração nativa em ROM privada: tile bloqueado, assistente clonado e portas laboratório/casa; controle, diálogo, retorno e movimento observados no DeSmuME. Geometria, texturas e BDHC nativos preservados.
+- 24 testes sintéticos e quatro recusas do CLI passaram. Export PDSMS real, mapa autoral, texturas novas, rampas e GUI dos editores permanecem pendentes.
+- Passos de exportação, formatos, limitações e pacote para o diretor visual documentados. ROM-base, ROM normal e fontes originais inalterados; saves/derivados fora do Git. Proteções adicionais de saves no `.gitignore`.
+
 ## 2026-11-08 — Checkpoint 02
 
 - Nova partida, movimento/transições e save/load persistente em novo processo do DeSmuME validados; causa do save em RAM corrigida por XDG_CONFIG_HOME privado, sem alterar a biblioteca.

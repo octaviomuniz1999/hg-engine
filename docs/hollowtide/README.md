@@ -2,6 +2,8 @@
 
 Fundação CP01 preservada em `1e2bf5a33`. No **Checkpoint 02**, nova partida, movimento/transições, save/load em processo novo e quatro cenários de batalha passaram no DeSmuME. Mega Slowbro e Primal Kyogre foram verificados no modo de testes; o botão manual de Mega e mapas autorais continuam pendentes. A ROM normal final é idêntica ao CP01. Evidência em [CHECKPOINT02.md](CHECKPOINT02.md); histórico inicial em [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md).
 
+No **Checkpoint 03**, a cópia privada de um mapa nativo foi importada com colisão, NPC e portas experimentais, verificados no DeSmuME. A geometria/BDHC nativos foram preservados; mapa autoral, texturas novas e rampas continuam pendentes. Branch `codex/hollowtide-checkpoint-03`, sem publicação. Resultados e limites em [CHECKPOINT03.md](CHECKPOINT03.md).
+
 ## Base e autoria
 
 - Upstream: [BluRosie/hg-engine](https://github.com/BluRosie/hg-engine).
@@ -26,10 +28,13 @@ Essas decisões são requisitos registrados, **não conteúdo implementado**. Ne
 | [BUILD.md](BUILD.md) | Ativação, dependências, comandos de build e gates de validação |
 | [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) | ROM recebida, três builds e modificação observada no emulador |
 | [CHECKPOINT02.md](CHECKPOINT02.md) | Partida, persistência, vitória/retorno e cenários Mega/Primal reais |
-| [GITHUB_REVIEW.md](GITHUB_REVIEW.md) | Diff congelado do CP01 e preparação da revisão antes de publicar |
+| [CHECKPOINT03.md](CHECKPOINT03.md) | Integridade dos checkpoints e ensaio de mapa nativo, colisão/NPC/portas no DeSmuME |
+| [GITHUB_REVIEW.md](GITHUB_REVIEW.md) | Diffs dos checkpoints e branch proposta para revisão antes de publicar |
 | [LINKER_AUDIT.md](LINKER_AUDIT.md) | Diagnóstico da Newlib e do linker efetivamente usado |
 | [MECHANICS_AUDIT.md](MECHANICS_AUDIT.md) | Evidências estáticas e validações pendentes |
 | [MAP_INTEGRATION.md](MAP_INTEGRATION.md) | PDSMS, DSPRE, hg-engine, recebimento e validação de mapas |
+| [MAP_EXPORT.md](MAP_EXPORT.md) | Passos no PDSMS 2.2 e pacote a entregar ao Codex |
+| [MAP_LAB.md](MAP_LAB.md) | Reprodução do importador experimental, formatos e limites |
 | [TEST_REPORT.md](TEST_REPORT.md) | Verificações realmente executadas e seus limites |
 | [BLOCKERS.md](BLOCKERS.md) | Dependências que impedem os próximos gates |
 | [ROADMAP.md](ROADMAP.md) | Etapas sequenciais e próximo checkpoint |
