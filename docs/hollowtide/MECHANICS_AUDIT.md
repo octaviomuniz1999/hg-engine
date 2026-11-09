@@ -1,6 +1,8 @@
 # Mecânicas: evidência de código, não de gameplay
 
-Base auditada: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Nenhuma mecânica foi reimplementada ou reconfigurada. O código foi compilado nos builds reais descritos em ROM_CHECKPOINT.md. As entradas abaixo demonstram implementação existente; o funcionamento de cada mecânica em batalha ainda aguarda teste.
+Base auditada: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Nenhuma mecânica foi reimplementada ou reconfigurada. O código foi compilado nos builds reais descritos em ROM_CHECKPOINT.md. As entradas abaixo preservam os achados estáticos do CP01; a atualização seguinte distingue os casos posteriormente exercitados em batalha.
+
+Atualização de execução: [CHECKPOINT02.md](CHECKPOINT02.md) registra quatro cenários reais aprovados. Mega Slowbro transformou (forma 1, Shell Armor 75) e reverteu; Kyogre com Blue Orb apresentou forma 1, Primordial Sea 189 e chuva intensa que bloqueou Ember sem perder HP, depois reverteu. Kyogre sem Orb ficou na forma base. Essas evidências ampliam a auditoria estática abaixo; não certificam todas as interações nem o desbloqueio manual de Mega pela história.
 
 | Sistema | Evidência na árvore atual | Gate de validação |
 | --- | --- | --- |

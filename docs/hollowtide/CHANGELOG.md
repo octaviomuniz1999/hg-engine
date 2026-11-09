@@ -1,5 +1,14 @@
 # Histórico Hollowtide
 
+## 2026-11-08 — Checkpoint 02
+
+- Nova partida, movimento/transições e save/load persistente em novo processo do DeSmuME validados; causa do save em RAM corrigida por XDG_CONFIG_HOME privado, sem alterar a biblioteca.
+- Quatro novos cenários de teste: vitória controlada, Kyogre sem Orb, Mega Slowbro e Primal Kyogre com Blue Orb/Primordial Sea. Todos passaram isoladamente; vitória nativa 1 seguida de movimento no campo comprovada.
+- Controlador de sessões, observador do runner original e sonda de layout ARM adicionados. Telemetria de forma/habilidade/item/HP/clima somente de leitura; solicitação Mega automatizada pelo modo original de testes.
+- Falhas de limpeza parcial, hooks residuais e avanço da fila após vitória natural investigadas. Procedimento corrigido: isolamento de processos e extração limpa na troca de modo. Saída normal final idêntica ao CP01.
+- Protocolo de mapas atualizado, sem substituir mapas. Diff completo do CP01 preparado para revisão local; nenhum push/PR.
+- ROM-base e código original preservados; normalização tipográfica automática restaurada. Saves, screenshots, ROMs e logs privados fora do Git.
+
 ## 2026-11-08 — primeiro build e prova observada no emulador
 
 - Oito volumes RAR extraídos pela libarchive existente; ROM IPKE revisão 0, 128 MiB, CRCs de cabeçalho/logo conferidos.

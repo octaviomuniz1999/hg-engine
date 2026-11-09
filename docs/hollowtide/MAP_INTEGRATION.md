@@ -4,6 +4,8 @@
 
 Não há mapas autorais exportados nos diretórios compartilhados consultados. A ROM-base foi recebida, o baseline compilou e uma prova de texto foi observada no emulador, conforme [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md). Não foi feita importação visual de mapas, conversão de geometria, alteração de colisões ou configuração de warps reais.
 
+No CP02, as transições **originais** quarto → térreo → exterior → laboratório, o save/load e cenários de batalha foram exercitados no DeSmuME. Isso valida o recorte da base usado no ensaio, não a importação PDSMS/DSPRE. Nenhum mapa existente foi substituído. Mapas 64/63/60/61 observados são IDs da base original e não reservas para Hollowtide.
+
 O [release oficial PDSMS 2.2](https://github.com/Trifindo/Pokemon-DS-Map-Studio/releases/tag/2.2) documenta exportação BIN com seções de modelo, permissões, edifícios, terreno, som e câmera para importação no DSPRE. O [README oficial do DSPRE](https://github.com/DS-Pokemon-Rom-Editor/DSPRE/blob/main/README.md) documenta importação/exportação de BIN e NSBMD, edição de colisões, headers, matrizes e eventos. Ele declara suporte **parcial** a ROMs hg-engine. Fontes consultadas em 2026-11-08; nenhum desses editores foi instalado ou executado nesta tarefa.
 
 Portanto, a rota candidata é **PDSMS → DSPRE → ROM de trabalho compatível → hg-engine**, a validar com as versões exatas dos editores e um mapa real. Não existe importador PDSMS direto no hg-engine demonstrado nesta entrega.
@@ -73,6 +75,8 @@ O exemplo mínimo reproduzível **sem mapa real** é a suíte `tests/hollowtide/
 O header referencia arquivos de evento, script e texto por índices distintos. Um ID de header não é um ID de matriz, membro NARC, warp ou script. Usar a [ficha de integração](templates/MAP_RECORD.md).
 
 ## Fluxo técnico futuro
+
+Antes de começar, conservar a ROM normal/backup e o save validado do CP02; receber o BIN autoral, projeto editável, recursos complementares e ficha. Usar uma cópia privada separada no DSPRE. Ao voltar de um build AUTO_TEST para normal, arquivar os objetos **e a extração** antes de reaplicar hooks. O primeiro experimento deve registrar a diferença exata dos recursos, sem transportar a campanha inteira ou sobrescrever a geometria aprovada.
 
 1. Concluir primeiro o build e boot do hg-engine sem mapas personalizados. Guardar ROM original e resultado em armazenamento privado com hashes; nunca sobrescrever o original recebido.
 2. Abrir uma cópia de trabalho compatível no DSPRE. Anotar versão, modo de headers e patches. Pela compatibilidade parcial declarada, não aplicar patches genéricos, editor de treinadores ou comandos de script sobre uma ROM hg-engine sem verificar a categoria afetada.

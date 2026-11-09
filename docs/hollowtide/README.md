@@ -1,13 +1,13 @@
 # Pokémon Hollowtide — base técnica Nintendo DS
 
-Checkpoint de 2026-11-08. **Baseline compilado; alteração mínima recompilada e observada no DeSmuME.** Foram três builds com exit 0. O marcador técnico `Hollowtide build test.` apareceu no tutorial. Save/load, batalhas e mapas autorais continuam sem validação. Evidência em [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md).
+Fundação CP01 preservada em `1e2bf5a33`. No **Checkpoint 02**, nova partida, movimento/transições, save/load em processo novo e quatro cenários de batalha passaram no DeSmuME. Mega Slowbro e Primal Kyogre foram verificados no modo de testes; o botão manual de Mega e mapas autorais continuam pendentes. A ROM normal final é idêntica ao CP01. Evidência em [CHECKPOINT02.md](CHECKPOINT02.md); histórico inicial em [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md).
 
 ## Base e autoria
 
 - Upstream: [BluRosie/hg-engine](https://github.com/BluRosie/hg-engine).
 - Checkout existente: `/workspace/hg-engine`; origin aponta para o fork `octaviomuniz1999/hg-engine`.
 - Commit base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`.
-- Branch local: `codex/hollowtide-foundation`. Sem push ou publicação.
+- CP01: `codex/hollowtide-foundation`; CP02: `codex/hollowtide-checkpoint-02`. Sem push ou publicação.
 - Submódulo nitrogfx: `a8fd94a3e582ded71eda5b9f5f0c69258544bb22`.
 - Código C/assembly, dados de jogo rastreados, configurações, Makefiles, lockfiles e créditos originais preservados. As adições Hollowtide ficam em `docs/hollowtide/`, `tools/hollowtide/` e `tests/hollowtide/`. `.gitignore` também protege os textos privados gerados para a prova; os arquivos não são narrativa final.
 
@@ -25,6 +25,8 @@ Essas decisões são requisitos registrados, **não conteúdo implementado**. Ne
 | --- | --- |
 | [BUILD.md](BUILD.md) | Ativação, dependências, comandos de build e gates de validação |
 | [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) | ROM recebida, três builds e modificação observada no emulador |
+| [CHECKPOINT02.md](CHECKPOINT02.md) | Partida, persistência, vitória/retorno e cenários Mega/Primal reais |
+| [GITHUB_REVIEW.md](GITHUB_REVIEW.md) | Diff congelado do CP01 e preparação da revisão antes de publicar |
 | [LINKER_AUDIT.md](LINKER_AUDIT.md) | Diagnóstico da Newlib e do linker efetivamente usado |
 | [MECHANICS_AUDIT.md](MECHANICS_AUDIT.md) | Evidências estáticas e validações pendentes |
 | [MAP_INTEGRATION.md](MAP_INTEGRATION.md) | PDSMS, DSPRE, hg-engine, recebimento e validação de mapas |

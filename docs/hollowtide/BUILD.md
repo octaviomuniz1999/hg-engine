@@ -1,6 +1,8 @@
 # Build reproduzível: comandos e gates
 
-Estado atual: três builds com exit 0 e prova de texto observada no emulador. Veja [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) para logs e limites. Os passos abaixo documentam como repetir e quais gates continuam necessários.
+Estado ao fim do CP01: três builds com exit 0 e prova de texto observada no emulador. Veja [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) para logs e limites. Os passos abaixo documentam como repetir e quais gates continuam necessários.
+
+Atualização CP02: save/load e quatro cenários reais de batalha passaram; a saída normal foi recompilada com extração limpa e ficou idêntica ao CP01. Ao alternar AUTO_TEST/normal, invalidar **objetos e extração antes de aplicar hooks**, não somente o arquivo final. Veja [CHECKPOINT02.md](CHECKPOINT02.md) para o isolamento dos casos e a configuração XDG que habilitou o save persistente.
 
 ## Ambiente já restaurado
 
@@ -77,8 +79,10 @@ A participação desse arquivo está demonstrada por `narcs.mk`: `build/trainers
 
 Recompilar, iniciar `test.nds` no emulador e observar a batalha/equipe alterada. Registrar save de teste, condições, captura e log. Depois reverter a prova ou separá-la da campanha. Esse teste não define o treinador Nevard.
 
-## Emulação: boot/texto comprovados; batalhas pendentes
+## Emulação: limites do CP01 e validação posterior
 
 DeSmuME iniciou o baseline até título/tutorial e exibiu o marcador na prova final. O emulador operou com save em RAM; persistência de save/load, exploração e batalhas não foram testadas. A inspeção visual realizada limita-se a essas telas.
+
+Esse parágrafo descreve o CP01. No CP02, XDG_CONFIG_HOME privado corrigiu o diretório ausente, e persistência, movimento/transições e quatro batalhas direcionadas foram testados. A prova Mega automatiza a solicitação e não valida a liberação pelo botão/flag da campanha.
 
 Após o build inicial e a prova mínima, preparar um build separado com `AUTO_TEST=Y` e só então usar `scripts/run_tests.sh -c`. O gerador `scripts/build_tests.py` normaliza e pode reescrever arquivos em `data/battle_tests/`; revisar o diff e preservar o baseline. Não executá-lo apenas para verificar Python. Os 512 arquivos C de cenários existentes não foram executados nesta tarefa.

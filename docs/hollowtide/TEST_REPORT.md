@@ -1,5 +1,7 @@
 # Relatório de verificações — 2026-11-08
 
+Este arquivo preserva o histórico do **Checkpoint 01**. O relatório de testes do Checkpoint 02, incluindo save/load e batalhas, está em [CHECKPOINT02.md](CHECKPOINT02.md).
+
 Base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Branch: `codex/hollowtide-foundation`.
 
 ## Estado atual: build e prova visual realizados
