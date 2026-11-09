@@ -94,3 +94,7 @@ Nenhum teste de conteúdo da ROM, compilação, extração ou emulação foi exe
 ## Atualização CP04
 
 Build oficial com exit 0 após invalidar o marcador gerado de learnsets; 31 testes offline e três recusas do CLI passaram. A mesma ROM final concluiu 34 checkpoints no DeSmuME: Vila autoral, alturas/escadarias, limites, NPCs/diálogos, três interiores, saída florestal com ida/volta e SAVE/CONTINUE em processo novo. Fonte/postes e textos foram inspecionados nas capturas. Originais e seções visuais preservados, inclusive cores/pixels. Relatório completo, falhas e limites em CHECKPOINT04.md. Não houve teste de hardware, campanha completa ou nova partida CP04; batalhas CP02 não foram repetidas nem reatribuídas.
+
+## Finalização CP04 — partida nova
+
+Nova partida NOVO sem bateria importada ou savestate; introdução/mãe, laboratório/Cyndaquil, Vila, NPCs, duas casas, escadas, colisões, saída e retorno, SAVE/quit/CONTINUE em outro processo e movimento passaram. 33 verificações de campo e 57 hashes de capturas; 31 testes offline aprovados. Mesma ROM CP04, sem nova compilação. Limites, comandos e evidências em [CHECKPOINT04_FINALIZATION.md](CHECKPOINT04_FINALIZATION.md). Batalhas/Mega/Primal, hardware e campanha completa não repetidos.

@@ -1,5 +1,15 @@
 # Revisão antes de preservar os checkpoints no GitHub
 
+## Finalização CP04 — autorização atual
+
+O proprietário autorizou expressamente o push normal da branch de desenvolvimento contendo CP01–04, exclusivamente para `octaviomuniz1999/hg-engine`, após auditoria de conteúdo. A branch continua `codex/hollowtide-checkpoint-03`; não reescrever checkpoints, fazer force push, alterar main ou criar PR. Essa autorização atual substitui a pendência histórica de publicação CP04 descrita abaixo.
+
+A auditoria final percorre todos os blobs adicionados/modificados em todos os commits desde `dbb321327`, inclusive revisões intermediárias. Aceita apenas código/documentação próprios nos caminhos Hollowtide e `.gitignore`/`AGENTS.md`; recusa binários, links simbólicos, extensões e caminhos inesperados. A revisão do conteúdo acompanha essa checagem; o código herdado do upstream não é apresentado como livre de assets preexistentes.
+
+Relatório de nova partida e entrega privada: [CHECKPOINT04_FINALIZATION.md](CHECKPOINT04_FINALIZATION.md). Diff acumulado, diff de finalização e recibos privados ficam em `/workspace/work/hollowtide/cp04-finalization/`: `full-development.patch`, `finalization.patch`, `full-development-stat.txt`, `publication-audit.json` e `publication-receipt.json`. O recibo de publicação, gerado depois do push, identifica o head remoto e compara main antes/depois. A ROM completa, capturas, saves e dumps permanecem fora do Git e não acompanham o push.
+
+## Revisão histórica CP03
+
 Este documento preserva a **revisão histórica preparada no CP03**. Posteriormente, o usuário autorizou exclusivamente o head `9e8e0adff` e seus ancestrais, e essa branch foi publicada no fork, sem force push, mudança de main ou PR. A diretriz `16316f079` e o CP04 são posteriores e **não foram publicados**. Novos commits exigem nova autorização; a revisão histórica abaixo não a constitui.
 
 ## Proposta acumulada do CP03

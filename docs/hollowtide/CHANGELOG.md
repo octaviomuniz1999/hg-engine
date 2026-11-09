@@ -1,5 +1,12 @@
 # Histórico Hollowtide
 
+## 2026-11-09 — Finalização CP04
+
+- Partida nova sem save técnico ou savestate: introdução, laboratório/inicial nativo, casas, NPCs, escadas, limites, saída/retorno e persistência em processo novo aprovados; 33 verificações de campo e 57 capturas com hashes.
+- ROM/build/arte reutilizados, sem alterações funcionais ou recompilação. 31 testes offline passaram; baterias e batalhas anteriores não repetidas.
+- Auditoria dos deltas de todos os commits; publicação autorizada somente à branch de desenvolvimento do fork, sem force/main/PR. Entrega da ROM completa privada com instruções Windows; não enviada ao OneDrive pelo Cloud.
+- Registrada a diretriz de eficiência: testes ligados ao delta, sem repetições injustificadas; próximo passo é revisão privada do proprietário, sem avançar Rota 01.
+
 ## 2026-11-09 — Checkpoint 04: Vila Inicial autoral
 
 - Anexo extraído e inventariado antes da integração; 15 originais preservados somente leitura. TEX0 e PER recuperados dos arquivos fornecidos, sem exigir novos exports.

@@ -43,3 +43,7 @@ Se um recurso indispensável estiver ausente, tentar recuperá-lo do projeto/exp
 Preservar integralmente CP01 `1e2bf5a33`, CP02 `6f3625641` e CP03 `9e8e0adff`, sem reescrever esses commits. Continuar na branch `codex/hollowtide-checkpoint-03`. O CP03 foi publicado no fork `octaviomuniz1999/hg-engine`; sua autorização de push foi exclusiva desse head e ancestrais. Novas publicações continuam sujeitas à revisão/autorização aplicável.
 
 A ROM-base e os saves permanecem privados, fora do Git. Reutilizar o ambiente validado, sem reinstalações desnecessárias. Não declarar funcionalidades aprovadas sem evidência. O CP03 comprovou somente calibração nativa; o primeiro mapa autoral e os testes posteriores estão em [CHECKPOINT04.md](CHECKPOINT04.md). Manter distintos os limites históricos e os resultados atuais.
+
+## Autorização posterior — finalização CP04
+
+O usuário autorizou preservar CP01–04 no fork `octaviomuniz1999/hg-engine`, usando a branch de desenvolvimento existente, após auditoria de todos os commits. Sem force push, mudança de main ou PR. A ROM completa deve ser entregue privadamente para download/cópia à pasta Windows escolhida pelo usuário, nunca no GitHub. O escopo e as evidências estão em CHECKPOINT04_FINALIZATION.md; essa autorização não cobre publicações futuras sem relação com a finalização. Não avançar para a Rota 01 definitiva nesta etapa.

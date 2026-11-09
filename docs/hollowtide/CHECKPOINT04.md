@@ -1,5 +1,7 @@
 # Checkpoint 04 — Vila Inicial autoral
 
+**Registro histórico do commit `4784b55b7`.** A nova partida sem save técnico e a autorização de publicação posteriores estão em [CHECKPOINT04_FINALIZATION.md](CHECKPOINT04_FINALIZATION.md).
+
 Data: 2026-11-09, America/Sao_Paulo. Branch de desenvolvimento: `codex/hollowtide-checkpoint-03`, continuando `16316f079`. CP01 `1e2bf5a33`, CP02 `6f3625641` e CP03 `9e8e0adff` são preservados como ancestrais. Nenhuma publicação nova está autorizada ou foi feita nesta etapa.
 
 ## Recebimento confirmado antes da integração

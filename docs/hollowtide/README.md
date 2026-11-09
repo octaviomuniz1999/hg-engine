@@ -6,7 +6,7 @@ No **Checkpoint 03**, a cópia privada de um mapa nativo foi importada com colis
 
 **Diretriz permanente:** o usuário cuida da direção criativa e construção visual no PDSMS 2.2; o Codex assume toda a programação e integração técnica. Não exigir colisões, alturas técnicas, warps ou scripts prontos do autor. Preservar geometria, decoração, construções e identidade visual sem mudanças não autorizadas. Ler [DEVELOPMENT_DIRECTIVE.md](DEVELOPMENT_DIRECTIVE.md) antes de integrar novos mapas.
 
-No **Checkpoint 04**, a Vila Inicial fornecida foi integrada preservando exatamente modelo, oito objetos BLD, decoração e BDHC. Build real concluído; 31 testes offline, três recusas de integração e 34 verificações de execução no DeSmuME passaram, incluindo duas escadarias, três interiores, NPCs, saída florestal com retorno e save/load em outro processo. Texturas/índices Nitro foram corrigidos. Os interiores e o trecho de rota são nativos provisórios, não a campanha definitiva. Registro local e artefatos privados em [CHECKPOINT04.md](CHECKPOINT04.md); sem novo push.
+No **Checkpoint 04**, a Vila Inicial fornecida foi integrada preservando exatamente modelo, oito objetos BLD, decoração e BDHC. Build real concluído; 31 testes offline, três recusas de integração e 34 verificações de execução no DeSmuME passaram, incluindo duas escadarias, três interiores, NPCs, saída florestal com retorno e save/load em outro processo. Texturas/índices Nitro foram corrigidos. Os interiores e o trecho de rota são nativos provisórios, não a campanha definitiva. Registro original e artefatos privados em [CHECKPOINT04.md](CHECKPOINT04.md). A finalização acrescenta nova partida sem save técnico e publicação autorizada após auditoria; relatório em [CHECKPOINT04_FINALIZATION.md](CHECKPOINT04_FINALIZATION.md) e instruções de download/teste privado em [PRIVATE_PLAYTEST.md](PRIVATE_PLAYTEST.md).
 
 ## Base e autoria
 
@@ -35,6 +35,8 @@ Essas decisões são requisitos registrados, **não conteúdo implementado**. Ne
 | [CHECKPOINT02.md](CHECKPOINT02.md) | Partida, persistência, vitória/retorno e cenários Mega/Primal reais |
 | [CHECKPOINT03.md](CHECKPOINT03.md) | Integridade dos checkpoints e ensaio de mapa nativo, colisão/NPC/portas no DeSmuME |
 | [CHECKPOINT04.md](CHECKPOINT04.md) | Primeiro mapa autoral integrado, texturas, portas, alturas, conexão e persistência reais |
+| [CHECKPOINT04_FINALIZATION.md](CHECKPOINT04_FINALIZATION.md) | Nova partida do zero, preservação/publicação autorizada e limites finais |
+| [PRIVATE_PLAYTEST.md](PRIVATE_PLAYTEST.md) | Download privado e teste da ROM completa na pasta Windows do proprietário |
 | [GITHUB_REVIEW.md](GITHUB_REVIEW.md) | Diffs dos checkpoints e branch proposta para revisão antes de publicar |
 | [LINKER_AUDIT.md](LINKER_AUDIT.md) | Diagnóstico da Newlib e do linker efetivamente usado |
 | [MECHANICS_AUDIT.md](MECHANICS_AUDIT.md) | Evidências estáticas e validações pendentes |
