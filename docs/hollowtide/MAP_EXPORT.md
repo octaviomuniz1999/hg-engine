@@ -21,7 +21,7 @@ Os nomes abaixo vêm do código da versão 2.2, não de uma sessão de GUI execu
 | Recurso | Necessidade |
 | --- | --- |
 | `<mapa>.bin` HGSS | Obrigatório para importação direta experimental; não enviar BIN de DPPt/Gen V |
-| `.nsbtx` e imagens/tileset usados | Obrigatórios quando houver texturas próprias; informar se a intenção é reutilizar texturas nativas |
+| `.nsbtx` ou NSBMD completo com TEX0, imagens/tileset usados | Entregar as texturas em pelo menos uma dessas formas; no CP04 elas foram recuperadas do NSBMD sem exigir outro export. Informar se a intenção é reutilizar texturas nativas |
 | `.pdsmap` e pasta editável completa | Necessários para preservar/reproduzir a criação visual; incluir arquivos referenciados, não apenas o projeto |
 | `.nsbmd`, `.per`, `.bdhc`, `.bld`, `.bgs`, `.bdhcam` se houver | Componentes para diagnosticar ou remontar o export; podem acompanhar o BIN mesmo quando já incorporados |
 | OBJ/MTL/texturas, IMD, logs do conversor | Recomendados para diagnosticar conversão; isoladamente não são um mapa pronto para HGSS |

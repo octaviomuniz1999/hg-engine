@@ -79,6 +79,16 @@ def main():
             ("map_id", 0), ("warp_id", 4), ("x", 8), ("z", 12), ("direction", 16)
         )}
         result["available"] = True
+        # Read-only height evidence: FieldSystem.playerAvatar (+0x40), avatar
+        # mapObject (+0x30), LocalMapObject.posVec (+0x70), per source headers.
+        avatar = word(field + 0x40)
+        if valid(avatar):
+            obj = word(avatar + 0x30)
+            if valid(obj):
+                raw = bytes(emulator.memory.unsigned[obj + 0x70:obj + 0x7C:1])
+                vector = [int.from_bytes(raw[i:i+4], "little", signed=True) for i in (0,4,8)]
+                result["player_position_fx32"] = vector
+                result["player_height_tiles"] = vector[1] / 65536
         events = word(field + 0x14)
         if valid(events):
             count = word(events + 8)

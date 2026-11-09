@@ -1,6 +1,6 @@
 # Revisão antes de preservar os checkpoints no GitHub
 
-**Nada foi publicado.** O pedido exige revisão do diff antes de qualquer publicação; não foi feito push nem criado PR. Este documento prepara a revisão, não constitui aprovação.
+Este documento preserva a **revisão histórica preparada no CP03**. Posteriormente, o usuário autorizou exclusivamente o head `9e8e0adff` e seus ancestrais, e essa branch foi publicada no fork, sem force push, mudança de main ou PR. A diretriz `16316f079` e o CP04 são posteriores e **não foram publicados**. Novos commits exigem nova autorização; a revisão histórica abaixo não a constitui.
 
 ## Proposta acumulada do CP03
 

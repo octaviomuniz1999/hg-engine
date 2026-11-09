@@ -21,13 +21,13 @@ Eventos: contagem u32 seguida de registros, nas categorias background (20 bytes)
 
 ## Reprodução privada a partir do CP02
 
-Usar a ROM normal validada, hash `f85b23be04e265f63f961326528cb9c080bacf2be34c4dbf9c03ec4ff558ffd5`. Cada destino deve ser novo e externo ao checkout; os comandos recusam sobreposição. Ajustar `cp03-rerun` para uma pasta inédita.
+Usar a ROM normal **congelada do CP02**, hash `f85b23be04e265f63f961326528cb9c080bacf2be34c4dbf9c03ec4ff558ffd5`, preservada privadamente em `/workspace/work/hollowtide/cp02/normal/game.nds`. O `test.nds` atual já incorpora as adições CP04 e é recusado corretamente pelo preparador CP03. Cada destino deve ser novo e externo ao checkout; ajustar `cp03-rerun` para uma pasta inédita.
 
 ```bash
 source /workspace/.hg-env/activate
-python -B tools/hollowtide/map_lab.py inspect test.nds 61
-python -B tools/hollowtide/prepare_map_calibration.py test.nds /workspace/work/hollowtide/cp03-rerun/intake
-python -B tools/hollowtide/map_lab.py apply test.nds /workspace/work/hollowtide/cp03-rerun/intake/plan.json /workspace/work/hollowtide/cp03-rerun/game.nds
+python -B tools/hollowtide/map_lab.py inspect /workspace/work/hollowtide/cp02/normal/game.nds 61
+python -B tools/hollowtide/prepare_map_calibration.py /workspace/work/hollowtide/cp02/normal/game.nds /workspace/work/hollowtide/cp03-rerun/intake
+python -B tools/hollowtide/map_lab.py apply /workspace/work/hollowtide/cp02/normal/game.nds /workspace/work/hollowtide/cp03-rerun/intake/plan.json /workspace/work/hollowtide/cp03-rerun/game.nds
 ```
 
 O preparador verifica a identidade da ROM; lê o membro 244 (Elm), divide/remonta e exige igualdade integral. Depois bloqueia `(5,11)`, adiciona NPC 8 em `(6,12)` clonando o assistente de índice 2, e configura as portas 61/warp0 ↔ 63/warp0. Arquivos privados: `calibration.bin`, `plan.json`, ROM derivada e relatório `.nds.json`. Nenhum byte extraído é armazenado nos fontes.

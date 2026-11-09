@@ -2,7 +2,9 @@
 
 ## Situação
 
-Não há mapas autorais exportados nos diretórios compartilhados consultados. No CP03, um mapa **nativo de calibração**, com colisão/NPC/warps experimentais, foi reimportado em cópia privada da ROM e exercitado no DeSmuME. Modelo, texturas e BDHC originais foram preservados. Isso não comprova importação visual autoral nem um export produzido pelo PDSMS. Procedimento reproduzível em [MAP_LAB.md](MAP_LAB.md) e resultados em [CHECKPOINT03.md](CHECKPOINT03.md).
+**CP04:** o primeiro pacote autoral foi recebido. O caminho direto BIN HGSS → build normal hg-engine → ROM derivada é implementado por `integrate_village.py`, incluindo texturas recuperadas do NSBMD, recursos de edifícios e índices Nitro reconstruídos. A revisão e os resultados reais estão em [CHECKPOINT04.md](CHECKPOINT04.md). Os parágrafos CP03 abaixo são históricos; a GUI PDSMS/DSPRE continua sem execução no Cloud.
+
+No CP03, ainda não havia mapas autorais exportados nos diretórios compartilhados consultados. Um mapa **nativo de calibração**, com colisão/NPC/warps experimentais, foi reimportado em cópia privada da ROM e exercitado no DeSmuME. Modelo, texturas e BDHC originais foram preservados. Esse ensaio histórico não comprovava importação visual autoral nem um export produzido pelo PDSMS. Procedimento reproduzível em [MAP_LAB.md](MAP_LAB.md) e resultados em [CHECKPOINT03.md](CHECKPOINT03.md).
 
 No CP02, as transições **originais** quarto → térreo → exterior → laboratório, o save/load e cenários de batalha foram exercitados no DeSmuME. No CP03, somente a cópia experimental passou a apontar o laboratório para outro membro de mapa e a porta para a casa; `rom.nds` e `test.nds` permaneceram idênticos. Mapas 64/63/60/61 são IDs da base original, não reservas para Hollowtide.
 
@@ -67,7 +69,7 @@ O exemplo mínimo reproduzível **sem mapa real** é a suíte `tests/hollowtide/
 | --- | --- |
 | Headers e matrizes | O dumper lê headers originais de ARM9, ou `a/0/5/0` se detectar o patch dinâmico; também consulta `fielddata/maptable/mapname.bin`. Não aplicar offsets vanilla a um hack sem identificar o modo |
 | Modelos, terreno, permissões, texturas e matriz | HGSS: land-data `a/0/6/5`, matrizes `a/0/4/1`, area-data `a/0/4/2`, texturas `a/0/4/4`. `map_lab.py` importa um BIN como **membro**, numa matriz exclusiva 1×1; texturas/edifícios externos são reutilizados, não convertidos |
-| Scripts de campo | `data/scr_seq/*.s` → membros de `a/0/1/2`; fontes próprias 3 e 953 sempre incluídas |
+| Scripts de campo | `data/scr_seq/*.s` → membros de `a/0/1/2`; fontes próprias de cinco dígitos, incluindo 3/953 e a nova 965, sempre incluídas |
 | Eventos e warps | `data/eventdata/zone_event/*.json` → `a/0/3/2`, sob `BUILD_DUMPED_EVENTDATA`; template em `data/eventdata/zone_event.json.txt` |
 | Diálogos | `data/text/*.txt`, `data/text/custom/*.txt` e textos gerados → `a/0/2/7`; custom é sempre compilado |
 | Encontros | `data/Encounters.c` → `a/0/3/7`; alterações de DSPRE nessa categoria podem ser substituídas pela fonte C |

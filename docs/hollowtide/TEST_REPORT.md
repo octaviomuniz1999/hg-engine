@@ -1,6 +1,6 @@
 # Relatório de verificações — 2026-11-08
 
-Este arquivo preserva o histórico do **Checkpoint 01**. O relatório de save/load e batalhas está em [CHECKPOINT02.md](CHECKPOINT02.md); a calibração de mapas e seus limites estão em [CHECKPOINT03.md](CHECKPOINT03.md).
+Este arquivo preserva o histórico do **Checkpoint 01**. O relatório de save/load e batalhas está em [CHECKPOINT02.md](CHECKPOINT02.md); a calibração está em [CHECKPOINT03.md](CHECKPOINT03.md). A integração autoral e os resultados atuais estão em [CHECKPOINT04.md](CHECKPOINT04.md).
 
 Base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Branch: `codex/hollowtide-foundation`.
 
@@ -90,3 +90,7 @@ Nenhum teste de conteúdo da ROM, compilação, extração ou emulação foi exe
 ## Atualização CP03
 
 24 testes sintéticos passaram (14 anteriores + 10 de formatos do laboratório). Quatro recusas do importador com a ROM real passaram sem escrever NDS. A calibração nativa de mapa, a colisão, o assistente clonado com diálogo e a transição de ida/volta foram executados no DeSmuME; controle com ROM normal confirmou o tile originalmente transitável. Sem build novo ou emulação de mapa autoral. Comandos, artefatos, hashes, capturas e limites em [CHECKPOINT03.md](CHECKPOINT03.md).
+
+## Atualização CP04
+
+Build oficial com exit 0 após invalidar o marcador gerado de learnsets; 31 testes offline e três recusas do CLI passaram. A mesma ROM final concluiu 34 checkpoints no DeSmuME: Vila autoral, alturas/escadarias, limites, NPCs/diálogos, três interiores, saída florestal com ida/volta e SAVE/CONTINUE em processo novo. Fonte/postes e textos foram inspecionados nas capturas. Originais e seções visuais preservados, inclusive cores/pixels. Relatório completo, falhas e limites em CHECKPOINT04.md. Não houve teste de hardware, campanha completa ou nova partida CP04; batalhas CP02 não foram repetidas nem reatribuídas.

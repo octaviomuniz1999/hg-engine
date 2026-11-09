@@ -6,6 +6,8 @@ No **Checkpoint 03**, a cópia privada de um mapa nativo foi importada com colis
 
 **Diretriz permanente:** o usuário cuida da direção criativa e construção visual no PDSMS 2.2; o Codex assume toda a programação e integração técnica. Não exigir colisões, alturas técnicas, warps ou scripts prontos do autor. Preservar geometria, decoração, construções e identidade visual sem mudanças não autorizadas. Ler [DEVELOPMENT_DIRECTIVE.md](DEVELOPMENT_DIRECTIVE.md) antes de integrar novos mapas.
 
+No **Checkpoint 04**, a Vila Inicial fornecida foi integrada preservando exatamente modelo, oito objetos BLD, decoração e BDHC. Build real concluído; 31 testes offline, três recusas de integração e 34 verificações de execução no DeSmuME passaram, incluindo duas escadarias, três interiores, NPCs, saída florestal com retorno e save/load em outro processo. Texturas/índices Nitro foram corrigidos. Os interiores e o trecho de rota são nativos provisórios, não a campanha definitiva. Registro local e artefatos privados em [CHECKPOINT04.md](CHECKPOINT04.md); sem novo push.
+
 ## Base e autoria
 
 - Upstream: [BluRosie/hg-engine](https://github.com/BluRosie/hg-engine).
@@ -32,6 +34,7 @@ Essas decisões são requisitos registrados, **não conteúdo implementado**. Ne
 | [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) | ROM recebida, três builds e modificação observada no emulador |
 | [CHECKPOINT02.md](CHECKPOINT02.md) | Partida, persistência, vitória/retorno e cenários Mega/Primal reais |
 | [CHECKPOINT03.md](CHECKPOINT03.md) | Integridade dos checkpoints e ensaio de mapa nativo, colisão/NPC/portas no DeSmuME |
+| [CHECKPOINT04.md](CHECKPOINT04.md) | Primeiro mapa autoral integrado, texturas, portas, alturas, conexão e persistência reais |
 | [GITHUB_REVIEW.md](GITHUB_REVIEW.md) | Diffs dos checkpoints e branch proposta para revisão antes de publicar |
 | [LINKER_AUDIT.md](LINKER_AUDIT.md) | Diagnóstico da Newlib e do linker efetivamente usado |
 | [MECHANICS_AUDIT.md](MECHANICS_AUDIT.md) | Evidências estáticas e validações pendentes |

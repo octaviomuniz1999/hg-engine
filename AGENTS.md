@@ -12,6 +12,8 @@ within that boundary. Resolve routine technical decisions autonomously; ask
 about creative decisions only when established design cannot safely resolve them.
 
 Preserve checkpoint commits `1e2bf5a33`, `6f3625641` and `9e8e0adff` as ancestors.
+Preserve later checkpoints as ancestors too; read `docs/hollowtide/CHECKPOINT04.md`
+for the first authored village, resource-binding pitfalls and reproducible tests.
 Continue on `codex/hollowtide-checkpoint-03` unless the user directs otherwise.
 Keep base ROMs, saves, extracted commercial assets and emulator artifacts private
 and outside Git. Do not publish new commits without authorization covering them;

@@ -42,4 +42,4 @@ Se um recurso indispensável estiver ausente, tentar recuperá-lo do projeto/exp
 
 Preservar integralmente CP01 `1e2bf5a33`, CP02 `6f3625641` e CP03 `9e8e0adff`, sem reescrever esses commits. Continuar na branch `codex/hollowtide-checkpoint-03`. O CP03 foi publicado no fork `octaviomuniz1999/hg-engine`; sua autorização de push foi exclusiva desse head e ancestrais. Novas publicações continuam sujeitas à revisão/autorização aplicável.
 
-A ROM-base e os saves permanecem privados, fora do Git. Reutilizar o ambiente validado, sem reinstalações desnecessárias. Não declarar funcionalidades aprovadas sem evidência. O CP03 comprovou somente calibração nativa: novos materiais/texturas, geometria/alturas autorais e o fluxo completo PDSMS permanecem pendentes dos respectivos testes.
+A ROM-base e os saves permanecem privados, fora do Git. Reutilizar o ambiente validado, sem reinstalações desnecessárias. Não declarar funcionalidades aprovadas sem evidência. O CP03 comprovou somente calibração nativa; o primeiro mapa autoral e os testes posteriores estão em [CHECKPOINT04.md](CHECKPOINT04.md). Manter distintos os limites históricos e os resultados atuais.

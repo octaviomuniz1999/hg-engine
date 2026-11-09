@@ -1,5 +1,14 @@
 # Histórico Hollowtide
 
+## 2026-11-09 — Checkpoint 04: Vila Inicial autoral
+
+- Anexo extraído e inventariado antes da integração; 15 originais preservados somente leitura. TEX0 e PER recuperados dos arquivos fornecidos, sem exigir novos exports.
+- Integrador reproduzível para a revisão recebida; NSBMD, BLD, BDHC, BGS e dados visuais preservados. Três portas, dois NPCs/diálogos de protótipo e saída na abertura florestal inferior direita. Nenhuma remoção de árvore foi necessária.
+- Texturas presentes mas inacessíveis por índices antigos: dicionários Patricia reconstruídos e verificados após serialização; fonte/postes observados corretamente. Correções de ABI de script/porta e requisito de colisão dos warps direcionais documentados.
+- Build limpo: marcador externo de learnsets arquivado após falha inicial, retry oficial exit 0. Código original/normalização tipográfica restaurados; só novos scripts/mensagens no delta do build normal.
+- 31 testes offline, três recusas de CLI e 34 checkpoints na ROM final passaram. Testes reais de alturas, colisões, NPCs, três interiores, rota de teste, save nativo, processo novo e movimento após CONTINUE.
+- Cenário de rota e interiores nativos são provisórios; nova partida/campanha CP04, Rota 01 autoral e hardware continuam fora da validação. Checkpoint local, sem publicação ou arquivos comerciais no Git.
+
 ## 2026-11-09 — diretriz permanente após CP03
 
 - Registrada a divisão definitiva: usuário responsável pela direção criativa/construção visual PDSMS 2.2; Codex responsável por integração, colisões/alturas, warps/interiores/conexões, NPCs, scripts/diálogos/eventos, recursos gráficos, compilação e testes.
