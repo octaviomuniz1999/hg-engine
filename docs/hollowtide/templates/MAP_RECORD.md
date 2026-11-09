@@ -2,6 +2,8 @@
 
 Modelo a preencher com evidências. Nenhum ID está reservado por este arquivo. Não contém mapa ou narrativa novos.
 
+**Preenchimento técnico: Codex.** O usuário entrega a criação visual; a ficha não exige dele colisões, alturas técnicas, warps, NPCs ou scripts prontos. Aplicar a [diretriz permanente](../DEVELOPMENT_DIRECTIVE.md), registrar inferências e pedir esclarecimento somente para intenções criativas ambíguas.
+
 | Campo | Valor a obter |
 | --- | --- |
 | Chave e localidade | Pendente |
@@ -9,6 +11,8 @@ Modelo a preencher com evidências. Nenhum ID está reservado por este arquivo. 
 | Autor/licença dos recursos | Pendente |
 | Editor/fork e versão exata | Pendente |
 | Projeto editável e export original | Caminhos privados pendentes |
+| Hashes dos originais e cópia de trabalho | A registrar pelo Codex |
+| Geometria, decoração e transformações BLD preservadas | Comparar bytes/estrutura e preview; alteração visual exige autorização |
 | Manifesto, tamanhos e SHA-256 | Pendente |
 | Seções presentes no BIN | Pendente de inspeção |
 | Modelos/texturas/edifícios complementares | Pendente |
@@ -26,6 +30,8 @@ Modelo a preencher com evidências. Nenhum ID está reservado por este arquivo. 
 ## Warps e transições
 
 Preencher por warp: header de origem, índice do warp, coordenadas e altura, header de destino, índice de destino, condições e caminho de retorno. Para conexões sem warp, registrar a célula da matriz, a continuidade do terreno e as coordenadas esperadas nos dois sentidos.
+
+Implementar e testar esses dados acompanhando as portas e desníveis visuais existentes. Não mover construções ou remodelar o cenário para acomodar os dados técnicos sem autorização.
 
 ## Estados do ginásio de irrigação
 

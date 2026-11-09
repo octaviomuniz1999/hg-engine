@@ -12,12 +12,14 @@ Há duas rotas a distinguir: **PDSMS → DSPRE → base privada preparada → bu
 
 ## Recebimento sem alterar a arte
 
+Aplica-se a [diretriz permanente](DEVELOPMENT_DIRECTIVE.md): o diretor fornece a criação visual, não uma área já programada. Colisões, alturas físicas, warps, interiores/conexões, NPCs, scripts e correções de recursos gráficos são responsabilidade do Codex. Os dados abaixo são inventariados ou inferidos pelo Codex; não são uma lista de tarefas técnicas a transferir ao autor.
+
 Manter o projeto editável original e os exports fornecidos pelo diretor criativo em área privada de trabalho, por exemplo `/workspace/work/hollowtide/maps/<chave>/`. Não adicioná-los automaticamente ao Git. Receber:
 
 - Nome e versão exatos do editor, inclusive o fork; alvo HGSS e dimensões do mapa.
 - Export BIN e, quando separados, NSBMD, NSBTX, PER, BDHC, BLD, BGS e BDHCAM. A extensão sozinha não prova que o formato está correto; nem todo export contém todas as seções.
 - Projeto editável, lista dos recursos usados e autoria/licenças.
-- Preview e indicação dos tiles transitáveis, alturas, entradas, saídas, conexões e posicionamento de NPCs.
+- Preview e indicações criativas disponíveis. Inferir do cenário os tiles transitáveis, alturas, entradas/saídas e conexões; configurar NPCs tecnicamente conforme o design estabelecido. Pedir esclarecimento criativo apenas onde houver ambiguidade real.
 - Para o ginásio: estados previstos das comportas, efeito nas rotas transitáveis e forma de persistência. Não atribuir flags ou redesenhar o puzzle sem o design fornecido.
 
 Registrar tamanhos e SHA-256 na entrega, preservando os bytes recebidos. A geometria e direção artística não são modificadas pelo processo de recebimento.

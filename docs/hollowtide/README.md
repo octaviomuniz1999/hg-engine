@@ -2,14 +2,16 @@
 
 Fundação CP01 preservada em `1e2bf5a33`. No **Checkpoint 02**, nova partida, movimento/transições, save/load em processo novo e quatro cenários de batalha passaram no DeSmuME. Mega Slowbro e Primal Kyogre foram verificados no modo de testes; o botão manual de Mega e mapas autorais continuam pendentes. A ROM normal final é idêntica ao CP01. Evidência em [CHECKPOINT02.md](CHECKPOINT02.md); histórico inicial em [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md).
 
-No **Checkpoint 03**, a cópia privada de um mapa nativo foi importada com colisão, NPC e portas experimentais, verificados no DeSmuME. A geometria/BDHC nativos foram preservados; mapa autoral, texturas novas e rampas continuam pendentes. Branch `codex/hollowtide-checkpoint-03`, sem publicação. Resultados e limites em [CHECKPOINT03.md](CHECKPOINT03.md).
+No **Checkpoint 03**, a cópia privada de um mapa nativo foi importada com colisão, NPC e portas experimentais, verificados no DeSmuME. A geometria/BDHC nativos foram preservados; mapa autoral, texturas novas e rampas continuam pendentes. O commit `9e8e0adff` foi publicado na branch [codex/hollowtide-checkpoint-03](https://github.com/octaviomuniz1999/hg-engine/tree/codex/hollowtide-checkpoint-03), após autorização, preservando os checkpoints anteriores. Resultados e limites históricos em [CHECKPOINT03.md](CHECKPOINT03.md).
+
+**Diretriz permanente:** o usuário cuida da direção criativa e construção visual no PDSMS 2.2; o Codex assume toda a programação e integração técnica. Não exigir colisões, alturas técnicas, warps ou scripts prontos do autor. Preservar geometria, decoração, construções e identidade visual sem mudanças não autorizadas. Ler [DEVELOPMENT_DIRECTIVE.md](DEVELOPMENT_DIRECTIVE.md) antes de integrar novos mapas.
 
 ## Base e autoria
 
 - Upstream: [BluRosie/hg-engine](https://github.com/BluRosie/hg-engine).
 - Checkout existente: `/workspace/hg-engine`; origin aponta para o fork `octaviomuniz1999/hg-engine`.
 - Commit base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`.
-- CP01: `codex/hollowtide-foundation`; CP02: `codex/hollowtide-checkpoint-02`. Sem push ou publicação.
+- CP01: `codex/hollowtide-foundation`; CP02: `codex/hollowtide-checkpoint-02`. Seus commits foram preservados como ancestrais do CP03 publicado; as branches locais anteriores continuam intactas.
 - Submódulo nitrogfx: `a8fd94a3e582ded71eda5b9f5f0c69258544bb22`.
 - Código C/assembly, dados de jogo rastreados, configurações, Makefiles, lockfiles e créditos originais preservados. As adições Hollowtide ficam em `docs/hollowtide/`, `tools/hollowtide/` e `tests/hollowtide/`. `.gitignore` também protege os textos privados gerados para a prova; os arquivos não são narrativa final.
 
@@ -25,6 +27,7 @@ Essas decisões são requisitos registrados, **não conteúdo implementado**. Ne
 
 | Arquivo | Conteúdo |
 | --- | --- |
+| [DEVELOPMENT_DIRECTIVE.md](DEVELOPMENT_DIRECTIVE.md) | Divisão permanente de responsabilidades e proteção da arte autoral |
 | [BUILD.md](BUILD.md) | Ativação, dependências, comandos de build e gates de validação |
 | [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) | ROM recebida, três builds e modificação observada no emulador |
 | [CHECKPOINT02.md](CHECKPOINT02.md) | Partida, persistência, vitória/retorno e cenários Mega/Primal reais |

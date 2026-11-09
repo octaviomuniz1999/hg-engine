@@ -1,5 +1,12 @@
 # Histórico Hollowtide
 
+## 2026-11-09 — diretriz permanente após CP03
+
+- Registrada a divisão definitiva: usuário responsável pela direção criativa/construção visual PDSMS 2.2; Codex responsável por integração, colisões/alturas, warps/interiores/conexões, NPCs, scripts/diálogos/eventos, recursos gráficos, compilação e testes.
+- Adicionados `AGENTS.md` e `DEVELOPMENT_DIRECTIVE.md`; protocolo de exportação/recebimento e ficha atualizados para não exigir acabamento técnico do autor.
+- Protegidas geometria, decoração, posição de construções e identidade visual; ajustes visuais exigem autorização. Perguntas criativas restritas a ambiguidades não resolvidas pelo design existente.
+- README atualizado com a publicação autorizada do CP03 em `9e8e0adff`. Esta atualização documental é local; a aprovação anterior de push não abrange novos commits. Sem alteração de código, assets, ROM ou resultados de testes; nenhuma compilação/emulação nesta atualização.
+
 ## 2026-11-09 UTC — Checkpoint 03
 
 - Integridade Git de CP01/02 conferida; auditoria de todas as versões adicionadas/modificadas, somente texto autoral nos namespaces previstos. Branch de desenvolvimento acumulada e patches preparados para revisão, sem push/PR.
