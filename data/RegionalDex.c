@@ -9,15 +9,17 @@
 // defines the number for the species in the regional dex. 0 means not in regional dex
 const u16 RegionalDex[] =
 {
-    [SPECIES_CHIKORITA] = 1,
-    [SPECIES_BAYLEEF] = 2,
-    [SPECIES_MEGANIUM] = 3,
-    [SPECIES_CYNDAQUIL] = 4,
-    [SPECIES_QUILAVA] = 5,
-    [SPECIES_TYPHLOSION] = 6,
-    [SPECIES_TOTODILE] = 7,
-    [SPECIES_CROCONAW] = 8,
-    [SPECIES_FERALIGATR] = 9,
+    // Hollowtide CP05: expose the approved starter families in the regional
+    // viewer too; national-only entries would be hidden during early play.
+    [SPECIES_SNIVY] = 1,
+    [SPECIES_SERVINE] = 2,
+    [SPECIES_SERPERIOR] = 3,
+    [SPECIES_FENNEKIN] = 4,
+    [SPECIES_BRAIXEN] = 5,
+    [SPECIES_DELPHOX] = 6,
+    [SPECIES_MUDKIP] = 7,
+    [SPECIES_MARSHTOMP] = 8,
+    [SPECIES_SWAMPERT] = 9,
     [SPECIES_PIDGEY] = 10,
     [SPECIES_PIDGEOTTO] = 11,
     [SPECIES_PIDGEOT] = 12,

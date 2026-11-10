@@ -2,9 +2,9 @@
 ## ORDEM DE DESENVOLVIMENTO — CHECKPOINT 05
 ### O início de uma nova jornada
 
-**Engine:** hg-engine / Pokémon HeartGold  
-**Base de referência:** Checkpoint 04, commit `4784b55b7`  
-**Agente responsável:** Codex  
+**Engine:** hg-engine / Pokémon HeartGold
+**Base de referência:** Checkpoint 04, commit `4784b55b7`
+**Agente responsável:** Codex
 **Direção criativa:** usuário
 
 ---

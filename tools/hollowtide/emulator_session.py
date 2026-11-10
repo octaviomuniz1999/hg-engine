@@ -20,6 +20,8 @@ def main():
     parser.add_argument("rom", type=Path)
     parser.add_argument("--session-dir", type=Path, required=True)
     parser.add_argument("--config-dir", type=Path, required=True)
+    parser.add_argument("--observe-battle-outcomes", action="store_true",
+                        help="Read native outcome flags at the existing IPKE function; no RAM writes")
     args = parser.parse_args()
     rom = args.rom.resolve()
     session = args.session_dir.resolve()
@@ -40,6 +42,13 @@ def main():
     emulator.volume_set(0)
     emulator.open(str(rom))
     frame = 0
+    battle_outcomes = []
+    if args.observe_battle_outcomes:
+        # Existing rom.ld symbol BattleSystem_SetBattleOutcomeFlags, also used
+        # by the CP02 observer. Native flags, not the debug-test scheduler.
+        def observe_outcome(address, size):
+            battle_outcomes.append({"frame":frame,"flags":emulator.memory.register_arm9.r1 & 0xFF})
+        emulator.memory.register_exec(0x0223BD20,observe_outcome)
     print("EMULATOR_READY", flush=True)
 
     def run(count, keys=()):
@@ -126,6 +135,8 @@ def main():
                         run(step.get("gap", 30))
                     run(step.get("frames", 0), step.get("keys", ()))
                 result = {"frame": frame, "running": emulator.is_running()}
+                if args.observe_battle_outcomes:
+                    result["battle_outcomes"] = list(battle_outcomes)
                 if "shot" in command:
                     target = local(command["shot"])
                     emulator.screenshot().save(target)

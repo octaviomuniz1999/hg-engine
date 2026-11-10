@@ -24,10 +24,10 @@ DIRECTIONS = {"UP":(0,-1),"DOWN":(0,1),"LEFT":(-1,0),"RIGHT":(1,0)}
 
 
 class Session:
-    def __init__(self,rom,root,config):
+    def __init__(self,rom,root,config,extra_args=()):
         self.root=root
         self.process=subprocess.Popen([sys.executable,"-u","-B",str(Path(__file__).with_name("emulator_session.py")),
-                                       str(rom),"--session-dir",str(root),"--config-dir",str(config)],
+                                       str(rom),"--session-dir",str(root),"--config-dir",str(config),*extra_args],
                                       stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
         for line in self.process.stdout:
             if "EMULATOR_READY" in line:break

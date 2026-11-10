@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "archives": {
+    "190": {
+      "0": [
+        "Alex: Touch a Poké Ball to meet the Pokémon inside!"
+      ],
+      "1": [
+        "Alex: Will you choose SNIVY, the Grass-type Pokémon?"
+      ],
+      "2": [
+        "Alex: Will you choose FENNEKIN, the Fire-type Pokémon?"
+      ],
+      "3": [
+        "Alex: Will you choose MUDKIP, the Water-type Pokémon?"
+      ],
+      "4": [
+        "SNIVY, the Grass-type Pokémon, is inside this Poké Ball!"
+      ],
+      "5": [
+        "FENNEKIN, the Fire-type Pokémon, is inside this Poké Ball!"
+      ],
+      "6": [
+        "MUDKIP, the Water-type Pokémon, is inside this Poké Ball!"
+      ],
+      "7": [
+        "Choose a Poké Ball when you are ready."
+      ],
+      "8": [
+        "Touch the ball button to choose. Touch elsewhere to look again."
+      ]
+    },
+    "543": {
+      "0": [
+        "Alex: Ah, {STRVAR_1 3, 0, 0}! You made it!",
+        "I was waiting for you.",
+        "There is a lot we can discover about Pokémon by reading books.",
+        "But some things we only learn when we start walking beside them."
+      ],
+      "1": [
+        "Alex: Ah, {STRVAR_1 3, 0, 0}! You made it!",
+        "I was waiting for you.",
+        "There is a lot we can discover about Pokémon by reading books.",
+        "But some things we only learn when we start walking beside them."
+      ],
+      "2": [
+        "Alex: Let me get everything ready."
+      ],
+      "3": [
+        "Alex: There we are."
+      ],
+      "4": [
+        "Alex: These three are waiting for someone to share a journey with.",
+        "Snivy, Fennekin and Mudkip.",
+        "Each has its own way of discovering the world.",
+        "There is no perfect choice.",
+        "Choose the one you would like to begin with."
+      ],
+      "5": [
+        "Alex: If a wild Pokémon appears, your partner can battle beside you."
+      ],
+      "6": [
+        "Alex: Take a look at the Poké Balls on that device."
+      ],
+      "7": [
+        "{STRVAR_1 3, 0, 0} received {STRVAR_1 0, 1, 0}",
+        "from Professor Alex!"
+      ],
+      "10": [
+        "Alex: Then it is decided!",
+        "I think you still have a lot to discover together.",
+        "Take good care of this Pokémon.",
+        "And let your partner surprise you, too."
+      ],
+      "11": [
+        "Alex: You can heal your partner with this machine.",
+        "Just check the PC on my desk."
+      ],
+      "12": [
+        "Alex: Take your time getting to know your partner, {STRVAR_1 3, 0, 0}.",
+        "You can always come back here."
+      ],
+      "13": [
+        "Alex: Take your time getting to know your partner, {STRVAR_1 3, 0, 0}.",
+        "You can always come back here."
+      ],
+      "15": [
+        "There are two Pokémon left.",
+        "They are under Professor Alex’s care."
+      ],
+      "17": [
+        "There are no Pokémon left here.",
+        "You wonder who Professor Alex gave the last one to."
+      ]
+    }
+  }
+}
