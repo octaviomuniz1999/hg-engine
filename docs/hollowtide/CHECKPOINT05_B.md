@@ -63,3 +63,11 @@ O script real do laboratório foi auditado privadamente: obtém a espécie do Po
 Batalhas curtas e revisão visual adicional estão em execução numa variante privada: `prepare_starter_battle.py` substitui somente o script autoral 965 por uma fixture que inicia a batalha nativa contra Rattata nível 2; o outro diálogo permanece. `test_starter_battle.py` usa botões normais, observa o resultado nativo e verifica experiência/movimento após vitória. **A presença dessas ferramentas não significa que as batalhas já passaram.** Seus resultados serão registrados ao concluir; esse evento não faz parte da ROM de produção. Sem rebuild de teste da engine.
 
 Próximo: CP05-C, introdução/mãe em inglês fiel e partida nova feminina, preservando gênero/nome e o mapa. A validação já concluída dos três parceiros será reutilizada se os únicos deltas C forem os bancos de texto 219/545, com comparação dos arquivos para demonstrá-lo.
+
+## Complemento após o registro B
+
+As três batalhas curtas passaram na variante privada, com resultado nativo de vitória 1, experiência 135 → 145, HP restante positivo e movimento no campo após o encerramento. Snivy/Fennekin/Mudkip tiveram os sprites traseiros conferidos. Os três menus de equipe mostraram ícones e nível 5 corretos. O primeiro ensaio de combate não entrou na batalha porque o menu de equipe ainda estava aberto; o controlador foi corrigido para tocar CANCEL, aguardar e confirmar a posição do jogador antes de iniciar o combate. Esses ensaios sem combate não contam como vitórias.
+
+Uma verificação adicional na ROM B de produção, fora do laboratório e sem a fixture de combate, confirmou visualmente os três seguidores corretos em terreno aberto. A leitura de FollowMon confirmou espécie 545/703/258 e estado ativo 1. Não foi necessário alterar os recursos visuais existentes.
+
+Evidências privadas: `b-battle-fixed-545/703/258/`, `b-battle-summary.json`, `b-follow-545/703/258/` e `b-runtime-summary.json`, sob o mesmo diretório CP05. A ROM temporária de batalha foi removida depois de conferir seu hash; receita, hashes, capturas, logs e saves permanecem. A ROM B de produção não contém esse evento.

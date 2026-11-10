@@ -1,5 +1,7 @@
 # Build reproduzível: comandos e gates
 
+CP05: um build incremental incorporou os iniciais/dex; textos e Vila são instalados em etapas privadas posteriores. A ROM jogável é `cp05/final/game.nds`, não o `test.nds` intermediário. Pipeline e hashes em [CHECKPOINT05_C.md](CHECKPOINT05_C.md).
+
 Atualização CP04: o build limpo compilou script próprio 965 e mensagens 854, e a Vila é instalada posteriormente por `tools/hollowtide/integrate_village.py`. O integrador não modifica a ROM-base. Ao invalidar caches, arquivar também marcadores gerados externos a `build/`, especialmente `include/constants/generated/learnsets.h`: ele pode impedir a recriação dos arquivos C de learnsets removidos com o cache. Comandos, falha inicial, retry real e delta do build em [CHECKPOINT04.md](CHECKPOINT04.md).
 
 Estado ao fim do CP01: três builds com exit 0 e prova de texto observada no emulador. Veja [ROM_CHECKPOINT.md](ROM_CHECKPOINT.md) para logs e limites. Os passos abaixo documentam como repetir e quais gates continuam necessários.

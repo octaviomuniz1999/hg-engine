@@ -56,6 +56,10 @@ def apply(rom_path, manifest, output):
             for index,paragraphs in replacements.items():
                 i = int(index);lab.require(0 <= i < len(before),"Message index out of bounds")
                 after[i] = wrap_dialogue(paragraphs)
+                # Opening-scene printers depend on the original final wait;
+                # preserve it when requested by their context-specific plan.
+                if plan.get("preserve_final_waits",False) and before[i].endswith("\\r"):
+                    after[i] += "\\r"
                 # Interactive controls and variable buffers are part of the
                 # event ABI. New text may not silently remove these operands.
                 for control in re.findall(r"\{(?:YESNO|STRVAR_)[^}]*\}",before[i]):

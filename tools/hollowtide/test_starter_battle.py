@@ -31,12 +31,12 @@ def main():
               "private_test_variant_only":True,"completed":False}
     s = Session(rom,root/"session",config,["--observe-battle-outcomes"])
     try:
-        s.boot();before = snapshot(s);mon = before["members"][0]
+        s.boot(field_pointer=fp);before = snapshot(s);mon = before["members"][0]
         lab.require(before["count"] == 1 and mon["species"] == a.species,mon)
         lab.require(mon["level"] == 5 and mon["hp"] > 0,mon);report["before"] = before
         s.send(frames=180)
         s.send(tap=[44,74],frames=180,shot="00-party-menu-before-battle.png")
-        s.send(pulse=2,keys=["B"],gap=45)
+        s.send(tap=[228,176],frames=240)
         f = s.send(field_pointer=fp)["field"]
         path = shortest_path(per,(f["x"],f["z"]),(8,16),
                              {(8,8),(13,25),(4,23),(28,27),(8,17),(17,26)})
@@ -44,7 +44,9 @@ def main():
         for d in path:
             if steps and steps[-1]["keys"] == [d]:steps[-1]["pulse"] += 1
             else:steps.append({"keys":[d],"pulse":1,"hold":8,"gap":30})
-        s.send(steps=steps)
+        f = s.send(steps=steps,field_pointer=fp)["field"]
+        lab.require((f["map_id"],f["x"],f["z"]) == (60,8,16),
+                    "Party menu did not close or path did not reach test NPC")
         s.send(steps=[{"frames":2,"keys":["DOWN"]},{"frames":30},
                       {"frames":2,"keys":["A"]},{"frames":900}],shot="01-battle-start.png")
         win = False

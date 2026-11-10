@@ -63,7 +63,7 @@ def main():
         return observed
 
     try:
-        s.boot();lab.require(snapshot(s)["count"] == 0,"Pre-lab battery already has a Pokemon")
+        s.boot(field_pointer=fp);lab.require(snapshot(s)["count"] == 0,"Pre-lab battery already has a Pokemon")
         walk(8,9)
         s.send(steps=[{"frames":40,"keys":["UP"]},{"frames":300},
                       {"frames":144,"keys":["UP"]},{"frames":180}],shot="01-alex-introduction.png",field_pointer=fp)
@@ -98,11 +98,12 @@ def main():
         walk(8,9)
         # Pokémon is the middle-left button; the top-left cell is Pokédex.
         s.send(tap=[44,74],frames=180,shot="08-party-icon-and-level.png")
-        s.send(pulse=2,keys=["B"],gap=45)
+        s.send(tap=[228,176],frames=240)
+        walk(8,10);walk(8,9)  # prove the party overlay closed before SAVE
         s.send(tap=[124,74],frames=120,shot="09-save-prompt.png")
         s.send(steps=[{"pulse":5,"keys":["A"],"gap":90},{"frames":1600}],shot="10-save-complete.png")
         s.close();report["native_save_sha256"] = lab.digest((config/"desmume"/(rom.stem+".dsv")).read_bytes())
-        s = Session(rom,root/"session02-cold-load",config);s.boot()
+        s = Session(rom,root/"session02-cold-load",config);s.boot(field_pointer=fp)
         f = shot("11-persistent-continue")["field"]
         lab.require((f["map_id"],f["x"],f["z"]) == (60,8,9),f)
         report["reloaded_party"] = party()

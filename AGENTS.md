@@ -16,7 +16,8 @@ Preserve later checkpoints as ancestors too; read `docs/hollowtide/CHECKPOINT04.
 for the first authored village, resource-binding pitfalls and reproducible tests.
 CP05 now continues on `codex/hollowtide-checkpoint-05` from `a679364bc`; preserve
 `codex/hollowtide-checkpoint-03` and its checkpoint ancestry. Read
-`docs/hollowtide/CHECKPOINT05_ORDER.md` and `CHECKPOINT05_A.md`. The owner
+`docs/hollowtide/CHECKPOINT05_ORDER.md` and `CHECKPOINT05_A.md`,
+`CHECKPOINT05_B.md`, `CHECKPOINT05_C.md`. The owner
 authorizes audited CP05 code/docs to their hg-engine fork on this separate
 branch; no main changes, force push, PR, ROMs, saves, dumps or commercial assets.
 Use incremental stages A/B/C and delta-specific tests, reuse existing builds,

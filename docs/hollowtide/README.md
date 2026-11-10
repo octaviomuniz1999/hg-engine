@@ -23,7 +23,7 @@ Hollowtide, anteriormente Pokémon PALM, usa ambientes 3D e personagens em sprit
 
 A campanha começa na Vila Inicial, passa pela Rota 01 e chega à Vila da Colheita, ligada a agricultura e irrigação. Professor Alex é o professor regional; Snivy, Fennekin e Mudkip são os iniciais. Team Palm é a organização antagonista. Nevard (Estevão), líder de Grama, tem Shroomish nível 12 e Treecko nível 14 planejados; seu ginásio usa comportas e irrigação. Primal Kyogre faz parte da equipe de um personagem relevante.
 
-Essas decisões são requisitos registrados, **não conteúdo implementado**. Nenhuma geometria, narrativa, equipe ou flag definitiva foi inventada ou alterada.
+A campanha completa permanece planejada. O CP05 implementa os iniciais e a abertura Alex/mãe no protótipo; ginásio, Team Palm e localidades seguintes não foram implementados. A geometria autoral permanece preservada.
 
 ## Documentação
 
@@ -60,3 +60,7 @@ TMPDIR=/workspace/work PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover 
 ```
 
 Os fixtures são sintéticos e temporários. Nenhum processo de compilação, extração real, empacotamento real ou emulação é executado por essa suíte.
+
+## Desenvolvimento CP05
+
+Branch `codex/hollowtide-checkpoint-05`, preservando o CP04. [CP05-A](CHECKPOINT05_A.md): colisões localizadas, 15 verificações. [CP05-B](CHECKPOINT05_B.md): Alex no laboratório, Snivy/Fennekin/Mudkip, dados/recursos auditados, três escolhas com save/load e flags de Pokédex. O complemento B registra três vitórias nativas em variante privada e seguidores corretos. [CP05-C](CHECKPOINT05_C.md) integra a introdução de Alex e a mãe, com nova partida feminina, laboratório, Snivy, save e CONTINUE na ROM final. Os gráficos do professor e os interiores são provisórios; os relatórios distinguem auditoria, compilação e execução.

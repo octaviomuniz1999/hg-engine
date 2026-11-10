@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "archives": {
+    "219": {
+      "1": [
+        "Hello. How lovely to meet you."
+      ],
+      "2": [
+        "Hello. How lovely to meet you."
+      ],
+      "3": [
+        "Hello. How lovely to meet you."
+      ],
+      "4": [
+        "Hello. How lovely to meet you."
+      ],
+      "5": [
+        "Hello. How lovely to meet you."
+      ],
+      "6": [
+        "Some roads connect towns. Others bring people together."
+      ],
+      "7": [
+        "Review the controls, or begin."
+      ],
+      "34": [
+        "This world is home to extraordinary creatures we call Pokémon."
+      ],
+      "35": [
+        "We live alongside them. Sometimes, we learn more from that life together than we ever imagined.",
+        "Some encounters pass quickly. Others stay with us for a long time.",
+        "My name is Alex. I am a Pokémon researcher.",
+        "I study these creatures and the many ways our lives come together.",
+        "But this story is not about my research.",
+        "It is about the journey that is about to begin."
+      ],
+      "36": [
+        "Before we continue, there is something I would like to know."
+      ],
+      "37": [
+        "Are you a boy or a girl? {YESNO 0}"
+      ],
+      "38": [
+        "So, you are a boy? {YESNO 0}"
+      ],
+      "39": [
+        "So, you are a girl? {YESNO 0}"
+      ],
+      "40": [
+        "What should I call you?"
+      ],
+      "41": [
+        "So, your name is {STRVAR_1 3, 0, 0}? {YESNO 0}"
+      ],
+      "42": [
+        "So, your name is {STRVAR_1 3, 0, 0}? {YESNO 0}"
+      ],
+      "43": [
+        "So this is your name, {STRVAR_1 3, 0, 0}.",
+        "It is a pleasure to meet you.",
+        "There is a whole world beyond your window.",
+        "You will find places you do not know yet. And people you may never forget.",
+        "You do not need to know where every path will lead.",
+        "For now, just take the first step."
+      ],
+      "28": [
+        "You are about to begin a journey of your own."
+      ],
+      "29": [
+        "Talk to people and explore the places around you."
+      ],
+      "30": [
+        "Check signs and objects for useful hints."
+      ],
+      "31": [
+        "Your Pokémon can help you in battles along the way."
+      ],
+      "32": [
+        "Take your time getting to know your partners."
+      ],
+      "33": [
+        "Follow your curiosity. Explore at your own pace."
+      ]
+    },
+    "545": {
+      "0": [
+        "Heading out already, {STRVAR_1 3, 0, 0}?",
+        "Funny... It feels like yesterday you were exploring every little corner of this village.",
+        "Well, I think the world has grown too small for your curiosity.",
+        "Here, take this Bag for your things."
+      ],
+      "1": [
+        "Heading out already, {STRVAR_1 3, 0, 0}?",
+        "Funny... It feels like yesterday you were exploring every little corner of this village.",
+        "Well, I think the world has grown too small for your curiosity.",
+        "Here, take this Bag for your things."
+      ],
+      "2": [
+        "Here is your Trainer Card."
+      ],
+      "3": [
+        "You can save your progress here."
+      ],
+      "4": [
+        "These should come in handy, too."
+      ],
+      "5": [
+        "Take good care of your things.",
+        "And remember: you can always come back home."
+      ],
+      "6": [
+        "Professor Alex is waiting at the lab, dear. Take care on your way."
+      ],
+      "7": [
+        "Oh, {STRVAR_1 3, 0, 0}! What a lovely partner you have.",
+        "Professor Alex must have given you that Pokémon.",
+        "Your Pokégear is ready, too. Here you go."
+      ]
+    }
+  },
+  "preserve_final_waits": true
+}

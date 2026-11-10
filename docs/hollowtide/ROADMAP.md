@@ -1,5 +1,7 @@
 # Checkpoints técnicos
 
+Próximo gate após CP05: revisão do autor sobre a abertura e os contatos de colisão ainda não classificados; arte aprovada de Alex quando disponível. Não avançar à Rota 01 definitiva. Antes de conectar eventos futuros, revisar as dependências dos iniciais/rival. Evidências e adiamentos em [CHECKPOINT05_C.md](CHECKPOINT05_C.md).
+
 | Ordem | Etapa | Estado e evidência |
 | --- | --- | --- |
 | 1 | Checkout, ambiente, auditoria e branch própria | Preparados; commit base exato, versões, Newlib e estrutura registrados |

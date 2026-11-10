@@ -1,5 +1,7 @@
 # Bloqueios e limites
 
+CP05: a abertura e os três iniciais funcionam no recorte testado. Permanecem gráficos nativos provisórios do professor, interiores nativos e eventos futuros de rival fora do protótipo. Áudio ouvido, encontros shiny, evolução animada, hardware e campanha completa não foram validados. Detalhes em [CHECKPOINT05_C.md](CHECKPOINT05_C.md).
+
 | ID | Bloqueio comprovado | O que impede | Como liberar |
 | --- | --- | --- | --- |
 | B01 — resolvido | O envio em oito volumes RAR permitiu extrair a base IPKE; cabeçalho/CRCs conferidos | Build/boot passaram no CP01; save/load e recorte de gameplay passaram no CP02 | Evidência em ROM_CHECKPOINT.md e CHECKPOINT02.md |

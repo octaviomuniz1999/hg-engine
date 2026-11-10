@@ -47,10 +47,10 @@ class Session:
             self.process.stdin.close();self.process.wait(timeout=30)
         if self.process.returncode:raise RuntimeError(f"DeSmuME exit {self.process.returncode}")
 
-    def boot(self):
+    def boot(self,field_pointer=FIELD_POINTER):
         return self.send(steps=[{"frames":900},{"frames":2,"keys":["START"]},{"frames":120},
                                 {"frames":2,"keys":["START"]},{"frames":600},
-                                {"frames":2,"keys":["A"]},{"frames":400}],field_pointer=FIELD_POINTER)
+                                {"frames":2,"keys":["A"]},{"frames":400}],field_pointer=field_pointer)
 
 
 def shortest_path(per,start,target,blocked):

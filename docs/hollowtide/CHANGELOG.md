@@ -1,5 +1,7 @@
 # Histórico Hollowtide
 
+CP05-A/B/C: colisões da fonte/mastros; Snivy/Fennekin/Mudkip e nove posições regionais; Alex no laboratório, introdução própria e diálogo acolhedor da mãe; observadores somente leitura e ensaios nativos. Geometria/decoração preservadas. Relatório e artefatos privados em [CHECKPOINT05_C.md](CHECKPOINT05_C.md).
+
 ## 2026-11-09 — Finalização CP04
 
 - Partida nova sem save técnico ou savestate: introdução, laboratório/inicial nativo, casas, NPCs, escadas, limites, saída/retorno e persistência em processo novo aprovados; 33 verificações de campo e 57 capturas com hashes.

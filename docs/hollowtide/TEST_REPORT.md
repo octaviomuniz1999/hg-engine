@@ -1,5 +1,7 @@
 # Relatório de verificações — 2026-11-08
 
+Estado CP05: colisões localizadas, três escolhas/persistência, três combates em variante privada e nova partida feminina até save/load na ROM final. Relatório atual e limites em [CHECKPOINT05_C.md](CHECKPOINT05_C.md); o histórico abaixo não foi reexecutado integralmente.
+
 Este arquivo preserva o histórico do **Checkpoint 01**. O relatório de save/load e batalhas está em [CHECKPOINT02.md](CHECKPOINT02.md); a calibração está em [CHECKPOINT03.md](CHECKPOINT03.md). A integração autoral e os resultados atuais estão em [CHECKPOINT04.md](CHECKPOINT04.md).
 
 Base: `dbb321327c59b821507f9fc4cb6c41d45a9d2698`. Branch: `codex/hollowtide-foundation`.
