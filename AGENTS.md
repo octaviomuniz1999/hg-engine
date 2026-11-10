@@ -14,7 +14,13 @@ about creative decisions only when established design cannot safely resolve them
 Preserve checkpoint commits `1e2bf5a33`, `6f3625641` and `9e8e0adff` as ancestors.
 Preserve later checkpoints as ancestors too; read `docs/hollowtide/CHECKPOINT04.md`
 for the first authored village, resource-binding pitfalls and reproducible tests.
-Continue on `codex/hollowtide-checkpoint-03` unless the user directs otherwise.
+CP05 now continues on `codex/hollowtide-checkpoint-05` from `a679364bc`; preserve
+`codex/hollowtide-checkpoint-03` and its checkpoint ancestry. Read
+`docs/hollowtide/CHECKPOINT05_ORDER.md` and `CHECKPOINT05_A.md`. The owner
+authorizes audited CP05 code/docs to their hg-engine fork on this separate
+branch; no main changes, force push, PR, ROMs, saves, dumps or commercial assets.
+Use incremental stages A/B/C and delta-specific tests, reuse existing builds,
+and do not repeat approved suites without evidence of regression.
 Keep base ROMs, saves, extracted commercial assets and emulator artifacts private
 and outside Git. The owner authorized the CP04 finalization development branch
 containing CP01–04 for the fork `octaviomuniz1999/hg-engine` only, after auditing
